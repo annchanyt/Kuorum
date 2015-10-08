@@ -282,8 +282,8 @@ p.party{
 }
 
     .timeline:before {
-        top: 0;
-        bottom: 0;
+        top: 55px;
+        bottom: -11px;
         position: absolute;
         content: " ";
         width: 6px;
@@ -362,7 +362,7 @@ p.party{
             font-size: 1.4em;
             text-align: center;
             position: absolute;
-            top: 33px;
+            top: 28px;
             left: 50%;
             margin-left: -15px;
             background-color: #999999;
@@ -374,6 +374,7 @@ p.party{
         }
 
         .timeline > li > .timeline-badge.small {
+            top: 33px;
             width: 18px;
             height: 18px;
             margin-left: -9px;
@@ -451,8 +452,11 @@ p.party{
 }    
 
 @media (max-width: 767px) {
+    #political-experience .panel-body{
+        padding: 20px 40px 0 60px;
+    }
     ul.timeline:before {
-        left: 40px;
+        left: 50px;
     }
 
     ul.timeline > li > .timeline-panel {
@@ -462,11 +466,13 @@ p.party{
     }
 
     ul.timeline > li > .timeline-badge {
-        left: 15px;
+        left: 35px;
         margin-left: 0;
         top: 16px;
     }
-
+    ul.timeline > li > .timeline-badge.small{
+        left : 50px;
+    }
     ul.timeline > li > .timeline-panel {
         float: right;
     }
@@ -484,3 +490,15 @@ p.party{
             left: -14px;
             right: auto;
         }
+
+    .timeline > li > .date {
+        margin-left: -4%;
+        margin-top: 4.2%;
+        
+    }
+    .timeline > li.timeline-inverted > .date {
+        float: left;
+        margin-top: 4.3%;
+        
+    }
+}    
