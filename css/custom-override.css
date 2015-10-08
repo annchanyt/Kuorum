@@ -47,7 +47,8 @@ a:hover{
 #obama-header{
     min-height: 285px;
     width: 100%;
-    background: url(../images/barack-obama-header.jpg) 0 0 no-repeat;
+    background: url(../images/barack-obama-header.jpg) 50% 50% no-repeat;
+    background-size: cover;
 }
 .profile-pic {
     position: relative;
@@ -98,11 +99,21 @@ p.party{
     padding: 3px 10px;
     margin: 0px 10px 10px 0;
 }
+.causes-tags li:hover,
+.causes-tags li:active,
+.causes-tags li:focus{
+    background-color: #b77a17;
+}
 .causes-tags li a{
     font-size: 14px;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 0.4px;
     color: #fff;
+}
+.causes-tags li a:hover,
+.causes-tags li a:focus,
+.causes-tags li a:active{
+    text-decoration: none;
 }
 .known-for{
     padding: 0;
@@ -163,7 +174,7 @@ p.party{
 }
 .share-buttons li {
     float: left;
-    margin-left: 22px;
+    margin-left: 20px;
     list-style-type: none;
     padding: 10px 0; 
 }
@@ -172,6 +183,11 @@ p.party{
 }
 .share-buttons li a i{
     font-size: 24px;
+}
+.share-buttons li a i:hover,
+.share-buttons li a i:active,
+.share-buttons li a i:focus{
+    color: #e3981e;
 }
 .share-buttons > li:first-child {
     margin-left: 0;
@@ -205,6 +221,8 @@ p.party{
 }
 .panel-default .progress{
     height: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .panel-default .table-condensed th, .panel-default .table-condensed td{
     border:none;
@@ -452,7 +470,7 @@ p.party{
 }    
 
 @media (max-width: 767px) {
-    #political-experience .panel-body{
+   #political-experience .panel-body{
         padding: 20px 40px 0 60px;
     }
     ul.timeline:before {
