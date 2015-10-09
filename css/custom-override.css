@@ -48,6 +48,7 @@ a:hover{
     letter-spacing: 0.4px;
     text-shadow: 0 0 1px #fff;
     display: inline-block;
+    padding: 3px 14px;
 }
 .btn-primary:hover, 
 .btn-primary:active, 
@@ -206,6 +207,14 @@ p.party{
 .causes-tags li a:focus,
 .causes-tags li a:active{
     text-decoration: none;
+}
+@media screen and (max-width: 767px){
+    .causes-tags li{
+        padding: 1px 6px;
+    }
+    .causes-tags li a{
+        font-size: 12px;
+    }
 }
 .known-for{
     padding: 0;
@@ -432,8 +441,8 @@ p.party{
             border-radius: 2px;
             padding: 20px;
             position: relative;
-            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
             background-color: #f7e0bb;
         }
 
@@ -628,7 +637,7 @@ h2.underline{
     padding: 40px 0;
 }
 .politician-list .box-ppal{
-    min-height: 420px;
+    min-height: 440px;
 }
 
 .card-header-photo img{
