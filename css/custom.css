@@ -4,7 +4,7 @@ Base Bootstrap 3.1.1 mobile first
 Responsive
 */
 
-/* tipos =========== */
+/* typography (tipos) =========== */
 /* ====================================================== */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight: normal;}
 body {
@@ -143,7 +143,7 @@ p {margin: 0 0 20px 0;}
 a:hover, a:focus {outline: 0;}
 
 
-/* Estilos generales =========== */
+/* General Styles (Estilos generales) =========== */
 /* ====================================================== */
 select.input-lg {padding: 10px 16px 10px 10px;}
 .input-lg {padding: 10px 12px;}

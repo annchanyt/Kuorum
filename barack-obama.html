@@ -216,7 +216,7 @@
                                         <small>No político</small>
                                     </span>
                                 </div>
-                                <button class="btn btn-blue btn-xs follow allow disabled" type="button">Seguir</button>
+                                <button class="btn btn-blue btn-xs follow allow disabled" type="button">Follow</button>
                                 <div class="pull-right">
                                     <span class="fa fa-check-circle-o"></span>
                                     <small>Te sigue</small>
@@ -250,13 +250,13 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <ul class="activity">
-                        <li><span class="counter">4</span> <span class="icon-Flaticon_17919"></span> <br> victorias</li>
-                        <li><span class="counter">2</span> <span class="icon-Flaticon_20188"></span> <br> impulsos</li>
-                        <li><span class="counter">6</span> <span class="icon-Flaticon_24178"></span> <br> votos</li>
+                        <li><span class="counter">4</span> <span class="icon-Flaticon_17919"></span> victorias</li>
+                        <li><span class="counter">2</span> <span class="icon-Flaticon_20188"></span> impulsos</li>
+                        <li><span class="counter">6</span> <span class="icon-Flaticon_24178"></span> votes</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-3">
-                    <button type="button" class="btn btn-blue pull-right follow allow">Seguir</button>
+                    <button type="button" class="btn btn-blue pull-right follow allow">Follow</button>
                 </div>
             </div>
         </div>
@@ -267,23 +267,25 @@
         <div class="row">
           <section id="main" class="col-sm-12 col-md-8" role="main">
             <div class="panel panel-default">
-              <div id='obama-header'></div>
+              <div class='card-header' id='obama-header'>
+                <button type="button" class="follow btn btn-blue allow enabled noLogged cssExtra" data-ajaxfollowurl="/ajax/kuorumUser/follow?id=538f37cd69be8b0266f743c3" data-ajaxunfollowurl="/ajax/kuorumUser/unFollow?id=538f37cd69be8b0266f743c3" data-message-follow_hover="Follow <span class=&quot;fa fa-check-circle&quot;></span>" data-message-follow="Follow" data-message-unfollow_hover="Unfollow" data-message-unfollow="Following  <span class=&quot;fa fa-check-circle&quot;></span>" data-userid="538f37cd69be8b0266f743c3">Follow <i class="fa fa-plus"></i></button>
+              </div>
               <div class="panel-body">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-xs-12 col-sm-3 profile-pic-col">
                     <div class="profile-pic pull-left">
                       <img alt="Barack Obama" class="img-circle" data-src="holder.js/140x140" src="images/obama-dp.png"data-holder-rendered="true">
                       <i class="fa fa-check"></i>
-                    </div>
+                    </div>  
                   </div>  
-                  <div class='col-md-6 profile-title'>    
+                  <div class='col-xs-7 col-sm-5 profile-title'>    
                     <h2>Barack Obama</h2>
                     <cite>President, United States</cite>
                     <p class='party'>Democratic</p>
                   </div>
-                  <div class="col-md-3 text-right">
-                    <i class="fa fa-check-square-o"></i> following you<br/>
-                    Followers 58K
+                  <div class="col-xs-5 col-sm-4 following">
+                    <strong>Followers 58K</strong><br/>
+                    <i class="fa fa-check-square-o"></i>following you
                   </div>
                 </div><!--/.row -->
 
@@ -309,7 +311,7 @@
               </div><!--/.panel-body-->
             </div><!--/.panel panel-default -->
 
-            <div class="panel panel-default">
+            <div class="hidden-xs brapanel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Latest Political Activity</h3>
               </div>
@@ -362,7 +364,7 @@
           <!-- ********** ASIDE: COLUMNA LATERAL CON INFORMACIÓN RELACIONADA CON LA PRINCIPAL ************************** -->
           <aside id="aside-ppal" class="col-sm-12 col-md-4" role="complementary">
 
-            <ul class="share-buttons">
+            <ul class="share-buttons hidden-xs">
               <li>
                   <div class="tooltip left" role="tooltip">
                       <div class="tooltip-arrow"></div>
@@ -546,7 +548,7 @@
 
         <!-- Political Experience Timeline -->
         <div class="row">
-          <div class="col-sm-12">
+          <div class="hidden-xs col-sm-12">
             <div class="panel panel-default" id='political-experience'>
               <div class="panel-heading">
                 <h3 class="panel-title">Political Experience</h3>
@@ -662,393 +664,390 @@
     <!--Other projects ***********************************************************************  -->
     <section id="otros-proyectos" class="row main">
       <div class="container-fluid">
-        <h2 class="underline text-center">Latest Projects</h2>
-        <div class="row">
-          <ul class="kakareo-list project" aria-relevant="additions" aria-live="assertive" role="log">
-            <li class="col-md-4">
+        <h2 class="underline">Latest Projects</h2>
+        <ul class="kakareo-list project" aria-relevant="additions" aria-live="assertive" role="log">
+          <li class="col-md-4">
+            <article class="kakareo post ley" role="article" itemtype="http://schema.org/Article">
+              <div class="link-wrapper">
+                <a href="#" class="hidden">Ir a la propuesta</a>
+                <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
+                  <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
+                    <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
+                  </span>
+                  <!-- POPOVER INFO USUARIO POLÍTICO -->
+                  <div class="popover">
+                    <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
+                    <div class="popover-user">
+                      <div class="user" itemscope="" itemtype="http://schema.org/Person">
+                          <a href="#" itemprop="url">
+                              <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
+                          </a>
+                          <span class="user-type">
+                              <small>Político</small>
+                          </span>
+                      </div>
+                      <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
+                      <div class="pull-right">
+                        <span class="fa fa-check-circle-o"></span>
+                        <small>Te sigue</small>
+                      </div>
+                      <ul class="infoActivity clearfix">
+                        <li>
+                            <span class="symbol">#</span>
+                            <span class="counter">0</span>
+                            <span class="sr-only">propuestas</span>
+                        </li>
+                        <li>
+                            <span class="fa fa-user"></span>
+                            <small><span class="fa fa-forward"></span></small>
+                            <span class="counter">4</span>
+                            <span class="sr-only">siguiendo</span>
+                        </li>
+                        <li>
+                            <span class="fa fa-user"></span>
+                            <small><span class="fa fa-backward"></span></small>
+                            <span class="counter">7</span>
+                            <span class="sr-only">seguidores</span>
+                        </li>
+                        <li class="pull-right">
+                            <span class="sr-only">Verificada</span>
+                            <span class="fa fa-check"></span>
+                        </li>
+                      </ul>
+                    </div><!--/.popover-->
+                  </div><!--/.user.author-->
+                  <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
+                  <span itemprop="datePublished">
+                      <time><span class="hidden-xs hidden-md">ha actualizado </span>hace 35 <abbr title="minutos">min.</abbr></time>
+                  </span>
+                </div>
+                <div class="ico-info">
+                    <span data-original-title="Actualización" rel="tooltip" data-placement="left" data-toggle="tooltip" class="fa icon2-update fa-2x"></span>
+                    <span class="sr-only">Actualización</span>
+                </div>
+                <div class="photo">
+                    <img itemprop="image" alt="textoAlternativoImagen" src="images/img-post.jpg">
+                </div>
+                <div class="more-info">
+                  <div class="row">
+                    <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
+                    <div class="col-xs-4 infoVotes text-right">
+                      <span class="vote-yes">
+                        <span>84%</span>
+                        <span class="sr-only">Votos a favor</span>
+                        <span class="icon-smiley fa-lg"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim. Timeam laoreet patrioque his ei, vel ea congue.</p>
+                <footer>
+                  <div class="row">
+                    <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
+                      <li itemprop="keywords">
+                        <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
+                        <span class="sr-only">Ámbito local</span>
+
+                        <!-- <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
+                        <span class="sr-only">Ámbito regional</span> -->
+
+                        <!-- <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
+                        <span class="sr-only">Ámbito estatal</span> -->
+
+                        <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
+                        <span class="sr-only">Ámbito supranacional</span> -->
+                      </li>
+                    </ul>
+                    <ul class="col-xs-7 col-sm-7 col-md-6 voting">
+                      <li>Proyecto cerrado</li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+            </article><!--/.link-wrapper-->
+          </li>
+          <li class="col-md-4">
               <article class="kakareo post ley" role="article" itemtype="http://schema.org/Article">
-                <div class="link-wrapper">
-                  <a href="#" class="hidden">Ir a la propuesta</a>
-                  <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
-                    <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
+                  <div class="link-wrapper">
+                      <a href="#" class="hidden">Ir a la propuesta</a>
+                      <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
+                          <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
+                              <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
+                          </span>
+                          <!-- POPOVER INFO USUARIO POLÍTICO -->
+                          <div class="popover">
+                              <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
+                              <div class="popover-user">
+                                  <div class="user" itemscope="" itemtype="http://schema.org/Person">
+                                      <a href="#" itemprop="url">
+                                          <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
+                                      </a>
+                                      <span class="user-type">
+                                          <small>Político</small>
+                                      </span>
+                                  </div>
+                                  <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
+                                  <div class="pull-right">
+                                      <span class="fa fa-check-circle-o"></span>
+                                      <small>Te sigue</small>
+                                  </div>
+                                  <ul class="infoActivity clearfix">
+                                      <li>
+                                          <span class="symbol">#</span>
+                                          <span class="counter">0</span>
+                                          <span class="sr-only">propuestas</span>
+                                      </li>
+                                      <li>
+                                          <span class="fa fa-user"></span>
+                                          <small><span class="fa fa-forward"></span></small>
+                                          <span class="counter">4</span>
+                                          <span class="sr-only">siguiendo</span>
+                                      </li>
+                                      <li>
+                                          <span class="fa fa-user"></span>
+                                          <small><span class="fa fa-backward"></span></small>
+                                          <span class="counter">7</span>
+                                          <span class="sr-only">seguidores</span>
+                                      </li>
+                                      <li class="pull-right">
+                                          <span class="sr-only">Verificada</span>
+                                          <span class="fa fa-check"></span>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
+                          <span itemprop="datePublished">
+                              <time><span class="hidden-xs hidden-md">ha actualizado </span>hace 35 <abbr title="minutos">min.</abbr></time>
+                          </span>
+                      </div>
+                      <div class="ico-info">
+                          <span data-original-title="Actualización" rel="tooltip" data-placement="left" data-toggle="tooltip" class="fa icon2-update fa-2x"></span>
+                          <span class="sr-only">Actualización</span>
+                      </div>
+                      <div class="photo">
+                          <img itemprop="image" alt="textoAlternativoImagen" src="images/img-post.jpg">
+                      </div>
+                      <div class="more-info">
+                          <div class="row">
+                              <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
+                              <div class="col-xs-4 infoVotes text-right">
+                                  <span class="vote-yes">
+                                      <span>84%</span>
+                                      <span class="sr-only">Votos a favor</span>
+                                      <span class="icon-smiley fa-lg"></span>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue fastideleifend reformidans ei.</p>
+                      <footer>
+                          <div class="row">
+                              <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
+                                  <li itemprop="keywords">
+                                      <!-- <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
+                                      <span class="sr-only">Ámbito local</span> -->
+
+                                      <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
+                                      <span class="sr-only">Ámbito regional</span>
+
+                                      <!-- <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
+                                      <span class="sr-only">Ámbito estatal</span> -->
+
+                                      <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
+                                      <span class="sr-only">Ámbito supranacional</span> -->
+                                  </li>
+                              </ul>
+                              <ul class="col-xs-7 col-sm-7 col-md-6 voting">
+                                  <li>Proyecto cerrado</li>
+                              </ul>
+                          </div>
+                      </footer>
+                  </div>
+              </article>
+          </li>
+          <li class="col-md-4">
+            <article class="kakareo post ley" role="article" itemtype="http://schema.org/Article">
+              <div class="link-wrapper">
+                <a href="#" class="hidden">Ir a la propuesta</a>
+                <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
+                  <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
                       <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                    </span>
-                    <!-- POPOVER INFO USUARIO POLÍTICO -->
-                    <div class="popover">
-                      <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
-                      <div class="popover-user">
-                        <div class="user" itemscope="" itemtype="http://schema.org/Person">
-                            <a href="#" itemprop="url">
-                                <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                            </a>
-                            <span class="user-type">
-                                <small>Político</small>
-                            </span>
-                        </div>
-                        <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
-                        <div class="pull-right">
+                  </span>
+                  <!-- POPOVER INFO USUARIO POLÍTICO -->
+                  <div class="popover">
+                    <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
+                    <div class="popover-user">
+                      <div class="user" itemscope="" itemtype="http://schema.org/Person">
+                          <a href="#" itemprop="url">
+                              <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
+                          </a>
+                          <span class="user-type">
+                              <small>Político</small>
+                          </span>
+                      </div>
+                      <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
+                      <div class="pull-right">
                           <span class="fa fa-check-circle-o"></span>
                           <small>Te sigue</small>
-                        </div>
-                        <ul class="infoActivity clearfix">
-                          <li>
-                              <span class="symbol">#</span>
-                              <span class="counter">0</span>
-                              <span class="sr-only">propuestas</span>
-                          </li>
-                          <li>
-                              <span class="fa fa-user"></span>
-                              <small><span class="fa fa-forward"></span></small>
-                              <span class="counter">4</span>
-                              <span class="sr-only">siguiendo</span>
-                          </li>
-                          <li>
-                              <span class="fa fa-user"></span>
-                              <small><span class="fa fa-backward"></span></small>
-                              <span class="counter">7</span>
-                              <span class="sr-only">seguidores</span>
-                          </li>
-                          <li class="pull-right">
-                              <span class="sr-only">Verificada</span>
-                              <span class="fa fa-check"></span>
-                          </li>
-                        </ul>
-                      </div><!--/.popover-->
-                    </div><!--/.user.author-->
-                    <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
-                    <span itemprop="datePublished">
-                        <time><span class="hidden-xs hidden-md">ha actualizado </span>hace 35 <abbr title="minutos">min.</abbr></time>
-                    </span>
-                  </div>
-                  <div class="ico-info">
-                      <span data-original-title="Actualización" rel="tooltip" data-placement="left" data-toggle="tooltip" class="fa icon2-update fa-2x"></span>
-                      <span class="sr-only">Actualización</span>
-                  </div>
-                  <div class="photo">
-                      <img itemprop="image" alt="textoAlternativoImagen" src="images/img-post.jpg">
-                  </div>
-                  <div class="more-info">
-                    <div class="row">
-                      <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
-                      <div class="col-xs-4 infoVotes text-right">
-                        <span class="vote-yes">
-                          <span>84%</span>
-                          <span class="sr-only">Votos a favor</span>
-                          <span class="icon-smiley fa-lg"></span>
-                        </span>
                       </div>
-                    </div>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim. Timeam laoreet patrioque his ei, vel ea congue.</p>
-                  <footer>
-                    <div class="row">
-                      <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
-                        <li itemprop="keywords">
-                          <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
-                          <span class="sr-only">Ámbito local</span>
-
-                          <!-- <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
-                          <span class="sr-only">Ámbito regional</span> -->
-
-                          <!-- <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
-                          <span class="sr-only">Ámbito estatal</span> -->
-
-                          <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
-                          <span class="sr-only">Ámbito supranacional</span> -->
+                      <ul class="infoActivity clearfix">
+                        <li>
+                            <span class="symbol">#</span>
+                            <span class="counter">0</span>
+                            <span class="sr-only">propuestas</span>
+                        </li>
+                        <li>
+                            <span class="fa fa-user"></span>
+                            <small><span class="fa fa-forward"></span></small>
+                            <span class="counter">4</span>
+                            <span class="sr-only">siguiendo</span>
+                        </li>
+                        <li>
+                            <span class="fa fa-user"></span>
+                            <small><span class="fa fa-backward"></span></small>
+                            <span class="counter">7</span>
+                            <span class="sr-only">seguidores</span>
+                        </li>
+                        <li class="pull-right">
+                            <span class="sr-only">Verificada</span>
+                            <span class="fa fa-check"></span>
                         </li>
                       </ul>
-                      <ul class="col-xs-7 col-sm-7 col-md-6 voting">
-                        <li>Proyecto cerrado</li>
-                      </ul>
                     </div>
-                  </footer>
+                  </div>
+                  <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
+                  <span itemprop="datePublished">
+                      <time><span class="hidden-xs hidden-md">ha publicado </span>hace 35 <abbr title="minutos">min.</abbr></time>
+                  </span>
                 </div>
-              </article><!--/.link-wrapper-->
-            </li>
-            <li class="col-md-4">
-                <article class="kakareo post ley" role="article" itemtype="http://schema.org/Article">
-                    <div class="link-wrapper">
-                        <a href="#" class="hidden">Ir a la propuesta</a>
-                        <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
-                            <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
-                                <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                            </span>
-                            <!-- POPOVER INFO USUARIO POLÍTICO -->
-                            <div class="popover">
-                                <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
-                                <div class="popover-user">
-                                    <div class="user" itemscope="" itemtype="http://schema.org/Person">
-                                        <a href="#" itemprop="url">
-                                            <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                                        </a>
-                                        <span class="user-type">
-                                            <small>Político</small>
-                                        </span>
-                                    </div>
-                                    <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
-                                    <div class="pull-right">
-                                        <span class="fa fa-check-circle-o"></span>
-                                        <small>Te sigue</small>
-                                    </div>
-                                    <ul class="infoActivity clearfix">
-                                        <li>
-                                            <span class="symbol">#</span>
-                                            <span class="counter">0</span>
-                                            <span class="sr-only">propuestas</span>
-                                        </li>
-                                        <li>
-                                            <span class="fa fa-user"></span>
-                                            <small><span class="fa fa-forward"></span></small>
-                                            <span class="counter">4</span>
-                                            <span class="sr-only">siguiendo</span>
-                                        </li>
-                                        <li>
-                                            <span class="fa fa-user"></span>
-                                            <small><span class="fa fa-backward"></span></small>
-                                            <span class="counter">7</span>
-                                            <span class="sr-only">seguidores</span>
-                                        </li>
-                                        <li class="pull-right">
-                                            <span class="sr-only">Verificada</span>
-                                            <span class="fa fa-check"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
-                            <span itemprop="datePublished">
-                                <time><span class="hidden-xs hidden-md">ha actualizado </span>hace 35 <abbr title="minutos">min.</abbr></time>
-                            </span>
-                        </div>
-                        <div class="ico-info">
-                            <span data-original-title="Actualización" rel="tooltip" data-placement="left" data-toggle="tooltip" class="fa icon2-update fa-2x"></span>
-                            <span class="sr-only">Actualización</span>
-                        </div>
-                        <div class="photo">
-                            <img itemprop="image" alt="textoAlternativoImagen" src="images/img-post.jpg">
-                        </div>
-                        <div class="more-info">
-                            <div class="row">
-                                <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
-                                <div class="col-xs-4 infoVotes text-right">
-                                    <span class="vote-yes">
-                                        <span>84%</span>
-                                        <span class="sr-only">Votos a favor</span>
-                                        <span class="icon-smiley fa-lg"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue fastideleifend reformidans ei.</p>
-                        <footer>
-                            <div class="row">
-                                <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
-                                    <li itemprop="keywords">
-                                        <!-- <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
-                                        <span class="sr-only">Ámbito local</span> -->
-
-                                        <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
-                                        <span class="sr-only">Ámbito regional</span>
-
-                                        <!-- <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
-                                        <span class="sr-only">Ámbito estatal</span> -->
-
-                                        <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
-                                        <span class="sr-only">Ámbito supranacional</span> -->
-                                    </li>
-                                </ul>
-                                <ul class="col-xs-7 col-sm-7 col-md-6 voting">
-                                    <li>Proyecto cerrado</li>
-                                </ul>
-                            </div>
-                        </footer>
-                    </div>
-                </article>
-            </li>
-            <li class="col-md-4">
-              <article class="kakareo post ley" role="article" itemtype="http://schema.org/Article">
-                <div class="link-wrapper">
-                  <a href="#" class="hidden">Ir a la propuesta</a>
-                  <div class="user author" itemprop="author" itemtype="http://schema.org/Person">
-                    <span class="popover-trigger" rel="popover" role="button" data-toggle="popover">
-                        <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                    </span>
-                    <!-- POPOVER INFO USUARIO POLÍTICO -->
-                    <div class="popover">
-                      <button type="button" class="close" aria-hidden="true" data-dismiss="popover"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
-                      <div class="popover-user">
-                        <div class="user" itemscope="" itemtype="http://schema.org/Person">
-                            <a href="#" itemprop="url">
-                                <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image"><span itemprop="name">Diecisiete caract</span>
-                            </a>
-                            <span class="user-type">
-                                <small>Político</small>
-                            </span>
-                        </div>
-                        <button type="button" class="btn btn-blue btn-xs follow allow disabled">Seguir</button>
-                        <div class="pull-right">
-                            <span class="fa fa-check-circle-o"></span>
-                            <small>Te sigue</small>
-                        </div>
-                        <ul class="infoActivity clearfix">
-                          <li>
-                              <span class="symbol">#</span>
-                              <span class="counter">0</span>
-                              <span class="sr-only">propuestas</span>
-                          </li>
-                          <li>
-                              <span class="fa fa-user"></span>
-                              <small><span class="fa fa-forward"></span></small>
-                              <span class="counter">4</span>
-                              <span class="sr-only">siguiendo</span>
-                          </li>
-                          <li>
-                              <span class="fa fa-user"></span>
-                              <small><span class="fa fa-backward"></span></small>
-                              <span class="counter">7</span>
-                              <span class="sr-only">seguidores</span>
-                          </li>
-                          <li class="pull-right">
-                              <span class="sr-only">Verificada</span>
-                              <span class="fa fa-check"></span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- FIN POPOVER INFO USUARIO POLÍTICO -->
-                    <span itemprop="datePublished">
-                        <time><span class="hidden-xs hidden-md">ha publicado </span>hace 35 <abbr title="minutos">min.</abbr></time>
-                    </span>
-                  </div>
-                  <div class="video">
-                    <a href="#" class="front">
-                      <span class="fa fa-play-circle fa-4x"></span>
-                      <img src="http://img.youtube.com/vi/fQDQO4VRpF8/maxresdefault.jpg">
-                      <!-- servir esta otra si el video no es alta resolucion -->
-                      <!-- <img src="http://img.youtube.com/vi/fQDQO4VRpF8/mqdefault.jpg"> -->
-                    </a>
-                    <iframe class="youtube" itemprop="video" src="https://www.youtube.com/embed/fQDQO4VRpF8?rel=0&amp;showinfo=0&amp;showsearch=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="more-info">
-                    <div class="row">
-                      <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
-                      <div class="col-xs-4 infoVotes text-right">
-                        <span class="vote-yes">
-                          <span>94%</span>
-                          <span class="sr-only">Abstenciones</span>
-                          <span class="icon-neutral fa-lg"></span>
-                        </span>
-                      </div>
+                <div class="video">
+                  <a href="#" class="front">
+                    <span class="fa fa-play-circle fa-4x"></span>
+                    <img src="http://img.youtube.com/vi/fQDQO4VRpF8/maxresdefault.jpg">
+                    <!-- servir esta otra si el video no es alta resolucion -->
+                    <!-- <img src="http://img.youtube.com/vi/fQDQO4VRpF8/mqdefault.jpg"> -->
+                  </a>
+                  <iframe class="youtube" itemprop="video" src="https://www.youtube.com/embed/fQDQO4VRpF8?rel=0&amp;showinfo=0&amp;showsearch=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="more-info">
+                  <div class="row">
+                    <div class="col-xs-8 laley" itemprop="keywords">#loqseaSeraOnoSera</div>
+                    <div class="col-xs-4 infoVotes text-right">
+                      <span class="vote-yes">
+                        <span>94%</span>
+                        <span class="sr-only">Abstenciones</span>
+                        <span class="icon-neutral fa-lg"></span>
+                      </span>
                     </div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue fastideleifend reformidans ei.</p>
-                  <footer>
-                    <div class="row">
-                      <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
-                        <li itemprop="keywords">
-                          <!-- <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
-                          <span class="sr-only">Ámbito local</span> -->
+                </div>
+                <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue fastideleifend reformidans ei.</p>
+                <footer>
+                  <div class="row">
+                    <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
+                      <li itemprop="keywords">
+                        <!-- <span data-original-title="Local" rel="tooltip" data-placement="right" data-toggle="tooltip" class="icon2-ciudad fa-lg"></span>
+                        <span class="sr-only">Ámbito local</span> -->
 
-                          <!-- <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
-                          <span class="sr-only">Ámbito regional</span> -->
+                        <!-- <span class="fa icon2-region fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Regional"></span>
+                        <span class="sr-only">Ámbito regional</span> -->
 
-                          <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
-                          <span class="sr-only">Ámbito estatal</span>
+                        <span class="fa icon2-estado fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Estatal"></span>
+                        <span class="sr-only">Ámbito estatal</span>
 
-                          <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
-                          <span class="sr-only">Ámbito supranacional</span> -->
+                        <!-- <span class="icon2-europe fa-lg" data-toggle="tooltip" data-placement="right" rel="tooltip" data-original-title="Supranacional"></span>
+                        <span class="sr-only">Ámbito supranacional</span> -->
+                      </li>
+                      <li itemprop="datePublished" class="hidden-xs hidden-sm">
+                        <time datetime="2014-12-24T13:40:50+02:00" class="timeago" title="85 días restantes">5 días restantes</time>
+                      </li>
+                    </ul>
+                    <div class="col-xs-7 col-sm-7 col-md-6 voting">
+                      <ul>
+                        <li>
+                          <a role="button" href="#"><span class="icon-smiley fa-lg"></span> <span class="sr-only">Vota a favor</span></a>
                         </li>
-                        <li itemprop="datePublished" class="hidden-xs hidden-sm">
-                          <time datetime="2014-12-24T13:40:50+02:00" class="timeago" title="85 días restantes">5 días restantes</time>
+                        <li>
+                          <a role="button" href="#"><span class="icon-sad fa-lg"></span> <span class="sr-only">Vota en contra</span></a>
+                        </li>
+                        <li>
+                          <a role="button" href="#"><span class="icon-neutral fa-lg"></span> <span class="sr-only">Vota abstención</span></a>
+                        </li>
+                        <li>
+                          <a role="button" href="#" class="design"><span class="fa fa-lightbulb-o fa-lg"></span> <span class="sr-only">Propón</span></a>
                         </li>
                       </ul>
-                      <div class="col-xs-7 col-sm-7 col-md-6 voting">
-                        <ul>
-                          <li>
-                            <a role="button" href="#"><span class="icon-smiley fa-lg"></span> <span class="sr-only">Vota a favor</span></a>
-                          </li>
-                          <li>
-                            <a role="button" href="#"><span class="icon-sad fa-lg"></span> <span class="sr-only">Vota en contra</span></a>
-                          </li>
-                          <li>
-                            <a role="button" href="#"><span class="icon-neutral fa-lg"></span> <span class="sr-only">Vota abstención</span></a>
-                          </li>
-                          <li>
-                            <a role="button" href="#" class="design"><span class="fa fa-lightbulb-o fa-lg"></span> <span class="sr-only">Propón</span></a>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
-                  </footer>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </div>
+                  </div>
+                </footer>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section><!-- /#otros-proyectos -->
-    <!--Other profiles ***********************************************************************  -->
-    <section role="complementary" id="otros-proyectos" class="row main">
-      <div class="container-fluid">
-        <div class="row">
-          <h2 class="underline text-center">Politicians you might like</h2>
-          <ul class="politician-list">
-            <li class="col-md-4">
-              <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
-                <div class="photo">
-                  <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
-                </div>
-                <div class="user">
-                  <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
-                  <button type="button" class="btn btn-blue btn-lg follow allow disabled">Siguiendo</button>
-                  <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
-                  <span class="user-type">Partido político</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue.</p>
-                <small>verificada <span class="fa fa-check"></span></small>
-                <div class="pull-right">
-                  <span class="fa fa-check-circle-o"></span> te sigue
-                </div>
-              </article>
-            </li>
-            <li class="col-md-4">
-              <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
 
-                <div class="photo">
-                  <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
+    <!--Other profiles ***********************************************************************  -->
+    <section role="complementary" id='suggested-politicians' class="row main">
+      <div class="container-fluid">
+        <h2 class="underline">Politicians you might like</h2>
+        <ul class="politician-list">
+          <li class="col-md-4">
+            <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
+              <div class="photo">
+                <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
               </div>
-                <div class="user">
-                  <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
-                  <button type="button" class="btn btn-blue btn-lg follow allow">Seguir</button>
-                  <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
-                  <span class="user-type">Partido político</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim.</p>
-                <small>verificada <span class="fa fa-check"></span></small>
-              </article>
-            </li>
-            <li class="col-md-4">
-              <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
-                <div class="photo">
-                  <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
-                </div>
-                <div class="user">
-                  <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
-                  <button type="button" class="btn btn-blue btn-lg follow allow">Seguir</button>
-                  <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
-                  <span class="user-type">Partido político</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet.</p>
-                <small>verificada <span class="fa fa-check"></span></small>
-              </article>
-            </li>
-          </ul>
+              <div class="user">
+                <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
+                <button type="button" class="btn btn-blue btn-lg follow allow disabled">Siguiendo</button>
+                <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
+                <span class="user-type">Partido político</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet patrioque his ei, vel ea congue.</p>
+              <small>verificada <span class="fa fa-check"></span></small>
+              <div class="pull-right">
+                <span class="fa fa-check-circle-o"></span> te sigue
+              </div>
+            </article>
+          </li>
+          <li class="col-md-4">
+            <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
+
+              <div class="photo">
+                <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
+            </div>
+              <div class="user">
+                <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
+                <button type="button" class="btn btn-blue btn-lg follow allow">Seguir</button>
+                <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
+                <span class="user-type">Partido político</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim.</p>
+              <small>verificada <span class="fa fa-check"></span></small>
+            </article>
+          </li>
+          <li class="col-md-4">
+            <article itemtype="http://schema.org/Person" itemscope role="article" class="box-ppal clearfix">
+              <div class="photo">
+                <img src="images/img-userprofile.jpg" alt="texto-alternativo-imagen">
+              </div>
+              <div class="user">
+                <img itemprop="image" class="user-img big" alt="nombre" src="images/user-default.jpg">
+                <button type="button" class="btn btn-blue btn-lg follow allow">Seguir</button>
+                <a href="#" class="user-name" itemprop="name">Nombre usuario</a>
+                <span class="user-type">Partido político</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, te fabellas euripidis expetendis vim, mei ut odio mucius scripserit. Timeam laoreet.</p>
+              <small>verificada <span class="fa fa-check"></span></small>
+            </article>
+          </li>
+        </ul>
+        <div class="text-center">
+          <a href="#" class="btn-primary btn-sm">see more</a>
+          </div>
         </div>
-        <div class="homeMore">
-            <a href="#" class="btn btn-blue btn-lg">Descubre cómo ellos hacen política</a>
-        </div>
-      </div>
-    </section>
+  </section>
     
     <!--Footer ***********************************************************************  -->
     <footer id="footer" class="row" role="contentinfo">

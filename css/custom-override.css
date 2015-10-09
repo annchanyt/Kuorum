@@ -1,4 +1,5 @@
-/*Typography*/
+/* Typography =========== */
+/* ====================================================== */
 h4{
     font-variant: small-caps;
     color: #333333;
@@ -35,6 +36,37 @@ a:hover{
 .text-danger{
     color:#ff0000;
 }
+/* Buttons =========== */
+/* ====================================================== */
+.btn-primary{
+    background-color: #1e84e3;
+    /*background-color: #20a2ea;*/
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 1px #fff;
+    display: inline-block;
+}
+.btn-primary:hover, 
+.btn-primary:active, 
+.btn-primary:visited,
+.btn-primary:focus{
+    text-decoration: none;
+}
+.btn-primary:hover{
+    /*background-color: #176ab7;*/
+    background-color: #2e6bab;
+}
+.btn-sm{
+    font-size: 14px;
+}
+/* Global Layout =========== */
+/* ====================================================== */
+
+
+
 /*Panel*/
 .panel{
     margin-bottom: 24px;
@@ -61,8 +93,8 @@ a:hover{
 }
 .profile-pic .fa-check {
     position: absolute;
-    bottom: 5px;
-    right: 11px;
+    bottom: 0px;
+    right: 7px;
     background-color: #1e84e3;
     border-radius: 100%;
     border: #fff solid 3px;
@@ -70,8 +102,7 @@ a:hover{
     width: 40px;
     color: #fff;
     font-size: 16px;
-    padding-top: 2px;
-    line-height: 30px;
+    padding-top: 9px;
     text-align: center;
 }
 
@@ -82,11 +113,64 @@ a:hover{
     margin-top: 0;
     margin-bottom: 6px;
 }
+.following{
+    text-align: right;
+
+}
+.following .fa-check-square-o{
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+@media (max-width: 767px){
+    .profile-title{
+        float: left;
+        margin-left: 0px;
+    }
+    .profile-pic-col{
+        text-align: center;
+    }
+    .profile-pic .img-circle{
+        width: 96px;
+        height: 96px;
+        border: solid 3px #fff; 
+    }
+    .profile-pic .fa-check{
+        font-size: 10px;
+        width: 24px;
+        height: 24px;
+        padding-top: 4px;
+        border: #fff solid 2px;
+    }
+    .profile-title h2{
+        font-size: 24px;
+        margin-bottom: 3px;
+    }
+    .following{
+    text-align: right;
+    font-size: 12px;
+    }
+
+    cite{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    p.party{
+        font-size: 12px;
+    }
+}
 p.party{
     margin-bottom: 5px;
 }
 .extra-padding{
     padding: 0 45px;
+}
+@media only screen and (max-width: 767px){
+    .extra-padding{
+        padding: 0 5px;
+    }
+
 }
 .causes-tags{
     padding: 0;
@@ -143,28 +227,27 @@ p.party{
     color: #666;
     margin-bottom: 24px;
 }
-.panel-default .btn-primary{
-	background-color: #1e84e3;
-	text-transform: uppercase;
-	font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-	text-shadow: 0 0 1px #fff;
-	display: inline-block;
-}
 .panel-default .btn-lg{
     width: 75%;
     margin-bottom: 15px;
 }
-.panel-default .btn-primary:hover, 
-.panel-default .btn-primary:active, 
-.panel-default .btn-primary:visited,
-.panel-default .btn-primary:focus{
-	text-decoration: none;
+.card-header{
+    position: relative;
 }
-.panel-default .btn-primary:hover{
-    background-color: #176ab7;
+.panel-default .btn.follow{
+    float: right;
+    position: absolute;
+    bottom: 16px;
+    right: 20px;
+    width: 146px;
+    height: 34px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.btn.follow .fa-plus{
+    margin-left: 3px;
 }
 .share-buttons {
     background-color: #333;
@@ -285,9 +368,7 @@ p.party{
     padding-bottom: 0;
     padding-top: 15px;
 }
-.panel-default .btn-sm{
-    font-size: 14px;
-}
+
 
 #political-experience .panel-body{
     padding: 35px 35px 0px;
@@ -520,3 +601,52 @@ p.party{
         
     }
 }    
+
+/* Latest projects =========== */
+/* ====================================================== */
+
+#otros-proyectos{
+    padding: 30px 0;
+    background-color: #fbfbfb;
+}
+h2.underline{
+    margin-top: 0;
+}
+#suggested-politicians{
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
