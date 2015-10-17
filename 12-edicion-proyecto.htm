@@ -1,0 +1,684 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuorum, únete a la democracia directa.</title>
+    <meta name="description" content="Kuorum es una red social de democracia participativa online que amplifica tu voz en el Congreso. ¡Regístrate ahora y empieza a votar!">
+    <meta name="keywords" content="kuorum, democracia, online, ley, votar, congreso, debate">
+    <meta name="dcterms.rightsHolder" content="Kuorum Social S.L.">
+    <meta name="dcterms.dateCopyrighted" content="2013">
+    <meta name="robots" content="all">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/styles.css">
+    <link rel="stylesheet" href="fonts/icomoon2/styles.css">
+    <link rel="stylesheet" href="css/jquery-te-1.4.0.css">
+    <link rel="stylesheet" href="css/datepicker3.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Estilos sólo para IE -->
+    <!--[if IE]><link rel="stylesheet" href="css/style_ie.css" type="text/css" media="screen"><![endif]-->
+    <!--[if IE 9]><link rel="stylesheet" href="css/style_ie9.css" type="text/css" media="screen"><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="css/style_ie8.css" type="text/css" media="screen"><![endif]-->
+
+    <!-- Soporte HTML5 y pseudo-clases CSS3 para IE9 e inferior -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <script src="js/respond.min.js"></script>
+        <script src="js/selectivizr.js"></script>
+    <![endif]-->
+
+    <!-- JavaScript -->
+    <script src="js/modernizr.js"></script>
+
+
+    <!-- For iPhone 5 and iPod touch -->
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png">
+
+    <!-- For iPhone 4 -->
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+
+    <!-- For the new iPad and iPad mini -->
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
+
+    <!-- For iPad 2 -->
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png">
+
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon-76x76.png">
+
+    <!-- For Nokia -->
+    <link rel="shortcut icon" href="images/icons/apple-touch-icon-76x76.png">
+
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+<div class ="container-fluid">
+
+    <a href="#main" accesskey="S" class="sr-only first">Ir directamente al contenido</a>
+
+    <!--  *******************  HEADER CONECTADO POLÍTICO  *******************  -->
+    <header id="header" role="banner">
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle bg-primary" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Abrir/cerrar navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a href="index.htm" class="navbar-brand"><img src="images/logo@2x.png" alt="kuorum.org"><span class="hidden">kuorum.org</span></a></h1>
+                    <h2 class="hidden">cyberactivismo para una mejor democracia</h2>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <form id="search-form" class="navbar-form navbar-left" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar en kuorum" name="srch-term" id="srch-term">
+                            <div class="input-group-btn">
+                                <button class="btn search" type="submit"><span class="fa fa-search"></span></button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="underline" itemscope itemtype="http://schema.org/Person">
+                            <a href="#" class="navbar-link user-area">
+                                <span itemprop="name">Diecisiete caract</span>
+                                <img src="images/user.jpg" alt="Diecisiete caract" class="user-img" itemprop="image">
+                            </a>
+                        </li>
+                        <li class="dropdown underline box">
+                            <a href="#" class="dropdown-toggle dropdown-menu-right navbar-link" id="open-user-notifications" data-toggle="dropdown" role="button">
+                                <span class="fa fa-bell fa-lg"></span>
+                                <span class="visible-xs" id="alerts">Notificaciones</span>
+                                <span class="badge pull-right" role="log" aria-labelledby="alerts" aria-live="assertive" aria-relevant="additions">8</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="open-user-notifications" role="menu">
+                                <li class="hidden-xs">Notificaciones</li>
+                                <li class="user new">
+                                    <span itemscope="" itemtype="http://schema.org/Person">
+                                        <a href="#" itemprop="url">
+                                            <img src="images/user.jpg" alt="nombre" class="user-img" itemprop="image">
+                                            <span itemprop="name">Nombre Usuario</span>
+                                        </a>
+                                    </span>
+                                    <span class="time">
+                                        <small><time class="timeago" datetime="2014-11-02T22:16Z" title="2014-11-02T22:16Z">hace 3 meses</time></small>
+                                    </span>
+                                    <span class="text-notification">Ahora te sigue</span>
+                                </li>
+                                <li class="user">
+                                    <span itemscope="" itemtype="http://schema.org/Person">
+                                        <a href="#" itemprop="url">
+                                            <img src="images/user.jpg" alt="nombre" class="user-img" itemprop="image">
+                                            <span itemprop="name">Nombre Usuario</span>
+                                        </a>
+                                    </span>
+                                    <span class="time">
+                                        <small><time class="timeago" datetime="2014-11-02T22:16Z" title="2014-11-02T22:16Z">hace 3 meses</time></small>
+                                    </span>
+                                    <span class="text-notification">Ahora te sigue</span>
+                                </li>
+                                <li>
+                                    <ul class="inline clearfix">
+                                        <li class="text-center"><a href="#">Ver todas las notificaciones</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown underline box">
+                            <a href="#" class="dropdown-toggle dropdown-menu-right navbar-link" id="open-user-messages" data-toggle="dropdown" role="button">
+                                    <span class="fa fa-envelope fa-lg"></span>
+                                    <span class="visible-xs" id="messages">Mensajes</span>
+                                    <span class="badge pull-right" role="log" aria-labelledby="messages" aria-live="assertive" aria-relevant="additions">11</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="open-user-messages" role="menu">
+                                    <li class="hidden-xs">Mensajes</li>
+                                    <li class="new">
+                                        <span itemscope itemtype="http://schema.org/Person">
+                                            <a href="#" itemprop="url">
+                                                <img src="images/user.jpg" alt="nombre" class="user-img" itemprop="image"><span itemprop="name">Nombre usuario</span>
+                                            </a>
+                                        </span>
+                                        <span class="fecha"><small><time class="timeago" class="timeago" datetime="2014-04-04T09:00:10+02:00">hace 2 horas</time></small></span>
+                                        <span class="text-message">Tempor eros ut libero hendre vestibil. Nullatin suada dignissim. Praesent accumsan facilisis fermentum. <a href="#" class="read">Ver mensaje</a></span>
+                                    </li>
+                                    <li>
+                                        <span itemscope itemtype="http://schema.org/Person">
+                                            <a href="#" itemprop="url">
+                                                <img src="images/user.jpg" alt="nombre" class="user-img" itemprop="image"><span itemprop="name">Nombre usuario</span>
+                                            </a>
+                                        </span>
+                                        <span class="fecha"><small><time class="timeago" datetime="2014-04-03T020:20:10+02:00">hace 9 horas</time></small></span>
+                                        <span class="text-message">Pellentesque congue vitae metus et malesuada. Class aptent taciti socios. <a href="">Ver mensaje</a></span>
+                                    </li>
+                                    <li>
+                                        <span itemscope itemtype="http://schema.org/Person">
+                                            <a href="#" itemprop="url">
+                                                <img src="images/user.jpg" alt="nombre" class="user-img" itemprop="image"><span itemprop="name">Nombre usuario</span>
+                                            </a>
+                                        </span>
+                                        <span class="fecha"><small><time class="timeago" datetime="2014-04-03T020:20:10+02:00">hace 1 día</time></small></span>
+                                        <span class="text-message">Aptent taciti socios. Congue vitae metus et malesuada. Tempor eros ut libero hendrerit aptent taciti vestibulum nulla tincidunt malesuada. <a href="">Ver mensaje</a></span>
+                                    </li>
+                                    <li>
+                                        <ul class="inline clearfix">
+                                            <li><a href="#" class="pull-left">Ver todos</a></li>
+                                            <li><a href="#" class="pull-right">Enviar un mensaje</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown underline">
+                            <a data-target="#" href="#" id="open-user-options" class="dropdown-toggle dropdown-menu-right navbar-link" data-toggle="dropdown" role="button">
+                                    <span class="fa fa-gear fa-lg"></span>
+                                    <span class="visible-xs">Opciones de usuario</span>
+                            </a>
+                            <ul id="user-options" class="dropdown-menu dropdown-menu-right" aria-labelledby="open-user-options" role="menu">
+                                <li>Opciones</li>
+                                <li><a href="#">Mi perfil</a></li>
+                                <li><a href="#">Configuración</a></li>
+                                <li><a href="#">Herramientas</a></li>
+                                <li><a href="#">Administrador</a></li>
+                                <li><a href="#">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link new-project">
+                                <span class="symbol">&#35;</span>
+                                <span class="visible-xs">Nuevo proyecto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ***********************************************************************  -->
+
+    <div class="row main">
+        <div class="container-fluid">
+            <div class="row">
+
+                <section id="main" class="col-sm-12 col-md-8" role="main">
+
+                    <form action="#" method="post" role="form" name="edit-project" id="edit-project" class="box-ppal">
+                        <h1>Nuevo proyecto en <span>NombreRegión</span> <span class="hashtag pull-right">#</span></h1>
+                        <fieldset class="title">
+                            <div class="form-group">
+                                <label for="title-project" class="sr-only">Da un título a tu proyecto</label>
+                                <div class="textareaContainer">
+                                    <textarea name="title-project" class="form-control counted" rows="3" placeholder="Título" id="title-project" minlength="2" required aria-required="true"></textarea>
+                                </div>
+                                <div id="charInitTit" class="hidden">Tienes un límite de caracteres de <span>107</span></div>
+                                <div id="charNumTit" class="charNum">Quedan <span>107</span> caracteres</div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="hashtag-time">
+                            <div class="row form-group">
+                                <div class="col-xs-12 col-sm-8">
+                                    <input type="text" class="form-control input-lg counted" placeholder="#hashtag" id="hashtag" required aria-required="true">
+                                    <div id="charInitHash" class="hidden">Tienes un límite de caracteres de <span>17</span></div>
+                                        <div id="charNumHash" class="charNum">Quedan <span>17</span> caracteres</div>
+                                    </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control input-lg" placeholder="Fecha límite" id="date-limit" required aria-required="true">
+                                        <span class="input-group-addon"><a href="#" class="datepicker"><span class="fa fa-calendar fa-lg"></span></a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="text">
+                            <div class="form-group">
+                                <label for="textProject" class="sr-only">Texto que explique tu proyecto</label>
+                                <div class="textareaContainer">
+                                    <textarea class="form-control counted texteditor" rows="8" placeholder="Explica tu proyecto" id="textProject" required aria-required="true"></textarea>
+                                </div>
+                                <div id="charInitTextProj" class="hidden">Tienes un límite de caracteres de <span>5000</span></div>
+                                <div id="charNumTextProj" class="charNum">Quedan <span>5000</span> caracteres</div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="multimedia">
+                            <span class="span-label sr-only">Subir imagen o vídeo de Youtube</span>
+                            <input type="hidden" name="fileType" value="" id="fileType">
+                            <ul class="nav nav-pills nav-justified">
+                                <li class="">
+                                    <a href="#projectUploadImage" data-toggle="tab" data-filetype="IMAGE">Subir imagen</a>
+                                </li>
+                                <li class="">
+                                    <a href="#projectUploadYoutube" data-toggle="tab" data-filetype="YOUTUBE">Vídeo de Youtube</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="projectUploadImage">
+                                    <div class="form-group image" data-multimedia-switch="on" data-multimedia-type="IMAGE">
+                                        <label for="input__imageId_NEW_" class="sr-only">Sube una imagen para tu publicación </label>
+                                        <div class="uploaderImageContainer POST_IMAGE">
+                                            <div id="au-uploaderImageId__imageId_NEW_">
+                                                <div class="qq-uploader">
+                                                    <div class="qq-upload-drop-area" style="display: none;">
+                                                        <div class="button-container"><span>Arrasta una imagen o</span>
+                                                            <div class="qq-upload-button" style="position: relative; overflow: hidden; direction: ltr;">pulsa para examinar <input type="file" name="file" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="qq-upload-list"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <input type="hidden" name="imageId" id="input__imageId_NEW_" value="">
+
+                                        <div class="progress hidden" id="progresBar__imageId_NEW_">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                0% Complete
+                                            </div>
+                                        </div>
+                                        <div class="modal fade uploadKuorumImage" id="modal__imageId_NEW_">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true" class="fa fa-times-circle-o fa"></span><span class="sr-only">Cerrar</span></button>
+                                                        <h4 class="modal-title">Recorta tu foto</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img class="upload-modal-image" src="" id="_imageId_NEW_">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="#" class="cancel" data-dismiss="modal">Cancelar</a>
+                                                        <button type="button" class="btn" onclick="cropImage('_imageId_NEW_')">Recortar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="projectUploadYoutube">
+                                    <div class="form-group video" data-multimedia-switch="on" data-multimedia-type="YOUTUBE">
+                                        <label for="videoPost" class="sr-only">Añade un vídeo de Youtube</label>
+                                        <input name="videoPost" type="url" value="" class="form-control " id="videoPost" placeholder="http://">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-group interest">
+                            <label>Elige hasta 4 materias con las que tenga relación el proyecto:</label>
+                            <div class="interestContainer clearfix">
+                                <div class="all clearfix">
+                                    <input type="checkbox" name="commissions" id="JUSTICE" value="JUSTICE" class="check">
+                                    <label for="JUSTICE"><span class="icon-JUSTICE"></span> Justicia</label>
+
+                                    <input type="checkbox" name="commissions" id="CONSTITUTIONAL" value="CONSTITUTIONAL" class="check">
+                                    <label for="CONSTITUCIONAL"><span class="icon-CONSTITUTIONAL"></span> Constitucional</label>
+
+                                    <input type="checkbox" name="commissions" id="AGRICULTURE" value="AGRICULTURE" class="check">
+                                    <label for="AGRICULTURE"><span class="icon-AGRICULTURE"></span> Agricultura</label>
+
+                                    <input type="checkbox" name="commissions" id="NUTRITION_AND_ENVIRONMENT" value="NUTRITION_AND_ENVIRONMENT" class="check">
+                                    <label for="NUTRITION_AND_ENVIRONMENT"><span class="icon-NUTRITION_AND_ENVIRONMENT"></span> Alimentación y Medio Ambiente</label>
+
+                                    <input type="checkbox" name="commissions" id="EUROPE_UNION" value="EUROPE_UNION" class="check">
+                                    <label for="EUROPE_UNION"><span class="icon2-europe"></span> Unión Europea</label>
+
+                                    <input type="checkbox" name="commissions" id="RESEARCH_DEVELOP" value="RESEARCH_DEVELOP" class="check">
+                                    <label for="RESEARCH_DEVELOP"><span class="icon-RESEARCH_DEVELOP"></span> Desarrollo</label>
+
+                                    <input type="checkbox" name="commissions" id="CULTURE" value="CULTURE" class="check">
+                                    <label for="CULTURE"><span class="icon-CULTURE"></span> Cultura</label>
+
+                                    <input type="checkbox" name="commissions" id="DEFENSE" value="DEFENSE" class="check">
+                                    <label for="DEFENSE"><span class="icon-DEFENSE"></span> Defensa</label>
+
+                                    <input type="checkbox" name="commissions" id="EDUCATION_SPORTS" value="EDUCATION_SPORTS" class="check">
+                                    <label for="EDUCATION_SPORTS"><span class="icon-EDUCATION_SPORTS"></span> Educación y Deporte</label>
+
+                                    <input type="checkbox" name="commissions" id="ECONOMY" value="ECONOMY" class="check">
+                                    <label for="ECONOMY"><span class="icon-ECONOMY"></span> Economía</label>
+
+                                    <input type="checkbox" name="commissions" id="FOREIGN_AFFAIRS" value="FOREIGN_AFFAIRS" class="check">
+                                    <label for="FOREIGN_AFFAIRS"><span class="icon-FOREIGN_AFFAIRS"></span> Asuntos Exteriores</label>
+
+                                    <input type="checkbox" name="commissions" id="EMPLOY_AND_HEALTH_SERVICE" value="EMPLOY_AND_HEALTH_SERVICE" class="check">
+                                    <label for="EMPLOY_AND_HEALTH_SERVICE"><span class="icon-EMPLOY_AND_HEALTH_SERVICE"></span> Empleo y Seguridad Social</label>
+
+                                    <input type="checkbox" name="commissions" id="PUBLIC_WORKS" value="PUBLIC_WORKS" class="check">
+                                    <label for="PUBLIC_WORKS"><span class="icon-PUBLIC_WORKS"></span> Fomento</label>
+
+                                    <input type="checkbox" name="commissions" id="TAXES" value="TAXES" class="check">
+                                    <label for="TAXES"><span class="icon-TAXES"></span> Hacienda</label>
+
+                                    <input type="checkbox" name="commissions" id="INDUSTRY" value="INDUSTRY" class="check">
+                                    <label for="INDUSTRY"><span class="icon-INDUSTRY"></span> Industria, Energía y Turismo</label>
+
+                                    <input type="checkbox" name="commissions" id="DOMESTIC_POLICY" value="DOMESTIC_POLICY" class="check">
+                                    <label for="DOMESTIC_POLICY"><span class="icon-DOMESTIC_POLICY"></span> Interior</label>
+
+                                    <input type="checkbox" name="commissions" id="BUDGETS" value="BUDGETS" class="check">
+                                    <label for="BUDGETS"><span class="icon-BUDGETS"></span> Presupuestos</label>
+
+                                    <input type="checkbox" name="commissions" id="HEALTH_CARE" value="HEALTH_CARE" class="check">
+                                    <label for="HEALTH_CARE"><span class="icon-HEALTH_CARE"></span> Sanidad y Servicios Sociales</label>
+
+                                    <input type="checkbox" name="commissions" id="DISABILITY" value="DISABILITY" class="check">
+                                    <label for="DISABILITY"><span class="icon-DISABILITY"></span> Discapacidad</label>
+
+                                    <input type="checkbox" name="commissions" id="ROAD_SAFETY" value="ROAD_SAFETY" class="check">
+                                    <label for="ROAD_SAFETY"><span class="icon-ROAD_SAFETY"></span> Seguridad Social</label>
+                                </div><!-- /.all -->
+                            </div>
+                        </div>
+
+
+                        <fieldset class="uploadPdf">
+                            <div class="form-group">
+                                <span class="btn btn-file">
+                                    <span class="fa fa-paperclip fa-lg"></span>Subir pdf <span class="hidden-xs">ampliando la información</span> (opcional) <input type="file">
+                                </span>
+
+                                <!-- SUBIENDO -->
+                                <!-- <div class="progress-pdf clearfix">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuetransitiongoal="75"></div>
+                                    </div>
+                                    <span>subiendo...</span>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true" class="fa fa-times-circle-o fa"></span><span class="sr-only">Cerrar</span></button>
+                                </div> -->
+
+                                <!-- COMPLETADO -->
+                                <!-- <div class="progress-pdf complete">
+                                    Nombre_del_archivo.pdf (891K)
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true" class="fa fa-times-circle-o fa"></span><span class="sr-only">Cerrar</span></button>
+                                </div> -->
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="btns text-right">
+                            <div class="form-group">
+                                <a href="#" class="cancel">Guardar borrador</a>
+                                <input type="submit" class="btn btn-lg" value="Publicar">
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </section>
+
+                <!-- ********************************************************************************************************* -->
+                <!-- ********** ASIDE: COLUMNA LATERAL CON INFORMACIÓN RELACIONADA CON LA PRINCIPAL ************************** -->
+
+                <aside id="aside-ppal" class="col-sm-12 col-md-4" role="complementary">
+                    <h1 class="withArrow">¿Qué pasará con mi proyecto?</h1>
+                    <span class="arrow1"></span>
+                    <section class="boxes info">
+                        <!-- ATENCIÓN: este article no lleva .link-wrapper ni el <a> hidden -->
+                        <article role="article" class="kakareo post ley">
+
+                            <div class="user author">
+                                <span>
+                                    <img src="images/user.jpg" alt="Tu fotografía" class="user-img"><span>Tu nombre</span>
+                                </span>
+                                <span>
+                                    <time>y la fecha de publicación</time>
+                                </span>
+                            </div>
+
+                            <div class="photo">
+                                <img itemprop="image" alt="textoAlternativoImagen" src="images/img-post.jpg">
+                            </div>
+
+                            <div class="more-info">
+                                <div class="row">
+                                    <div class="col-xs-8 laley">#hashtag</div>
+                                    <div class="col-xs-4 infoVotes text-right">
+                                        <span class="vote-yes">
+                                            <span>53%</span>
+                                            <span class="sr-only">Votos a favor</span>
+                                            <span class="icon-smiley fa-lg"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Los usuarios de tu circunscripción a los que les interese este tema recibirán una notificación para opinar sobre tu proyecto.</p>
+
+                            <footer>
+                                <div class="row">
+                                    <ul class="col-xs-5 col-sm-5 col-md-6 info-kak">
+                                        <li>
+                                            <span class="fa icon2-estado fa-lg"></span>
+                                            <span class="sr-only">Ámbito estatal</span>
+                                        </li>
+                                        <li class="hidden-xs hidden-sm">
+                                            <time>85 días restantes</time>
+                                        </li>
+                                    </ul>
+                                    <div class="col-xs-7 col-sm-7 col-md-6 voting">
+                                        <ul>
+                                            <li>
+                                                <a role="button" href="#"><span class="icon-smiley fa-lg"></span> <span class="sr-only">Vota a favor</span></a>
+                                            </li>
+                                            <li>
+                                                <a role="button" href="#"><span class="icon-sad fa-lg"></span> <span class="sr-only">Vota en contra</span></a>
+                                            </li>
+                                            <li>
+                                                <a role="button" href="#"><span class="icon-neutral fa-lg"></span> <span class="sr-only">Vota abstención</span></a>
+                                            </li>
+                                            <li>
+                                                <a role="button" href="#" class="design active"><span class="fa fa-lightbulb-o fa-lg"></span> <span class="sr-only">Propón</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                        </article>
+                        <span class="arrow2"></span>
+                    </section>
+                    <h2 class="withArrow">Ellos podrán votar el proyecto y hacerte propuestas para mejorarlo.<span class="arrow3"></span></h2>
+
+                    <section class="boxes info">
+                        <!-- ATENCIÓN: este article no lleva .link-wrapper ni el <a> hidden -->
+                        <article role="article" class="kakareo">
+                            <h1>Podrás ver qué propuestas tienen más apoyo de la comunidad, debatirlas y apadrinarlas.</h1>
+                            <div class="main-kakareo row">
+                                <div class="col-xs-6 col-sm-12 col-md-6 user author">
+                                    <span>
+                                        <img src="images/user.jpg" class="user-img" alt="Tu fotografía"><span>Ciudadano X</span>
+                                    </span>
+                                </div><!-- /autor -->
+                                <div class="col-xs-6 col-sm-12 col-md-6 text-right user victory">
+                                    Apadrinada por
+                                    <span>
+                                        <img class="user-img" alt="Fotografía del usuario que apadrina" src="images/user.jpg">
+                                    </span>
+                                </div><!-- /patrocinadores -->
+                            </div>
+                            <footer class="row">
+                                <ul class="col-xs-2 col-sm-2 col-md-4 info-kak">
+                                    <li>
+                                        <span class="fa icon2-region fa-lg"></span>
+                                        <span class="sr-only">Ámbito regional</span>
+                                    </li>
+                                </ul>
+                                <ul class="col-xs-10 col-sm-10 col-md-8 actions-kak">
+                                    <li class="read-later">
+                                        <a class="enabled" href="#">
+                                            <span class="fa fa-bookmark fa-lg"></span>
+                                            <span class="sr-only">Leer después</span>
+                                        </a>
+                                    </li>
+                                    <li class="like-number">
+                                        <span class="counter">32</span>
+                                        <a href="#">
+                                            <span class="fa fa-rocket fa-lg"></span>
+                                            <span class="sr-only">Impulsar</span>
+                                        </a>
+                                    </li>
+                                    <li class="kakareo-number">
+                                        <span class="counter">542</span>
+                                        <a href="#">
+                                            <span class="fa icon-megaphone fa-lg"></span>
+                                            <span class="sr-only">Kakarear</span>
+                                        </a>
+                                    </li>
+                                    <li class="more-actions">
+                                        <span class="more-actions">
+                                            ... <span class="sr-only">Más acciones</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </article>
+                        <span class="arrow4"></span>
+                    </section>
+
+                    <h3 class="withArrow">Cuando apadrinas una propuesta te estás comprometiendo a defenderla donde corresponda.<span class="arrow5"></span></h3>
+
+                    <section class="boxes info">
+                        <!-- ATENCIÓN: este article no lleva .link-wrapper ni el <a> hidden -->
+                        <article role="article" class="kakareo">
+                            <h1>Si el autor de la propuesta considera que has cumplido tu compromiso, obtendrás victoria.</h1>
+                            <div class="main-kakareo row">
+                                <div class="col-xs-6 col-sm-12 col-md-6 user author">
+                                    <span>
+                                        <img src="images/user.jpg" class="user-img" alt="Tu fotografía"><span>Ciudadano X</span>
+                                    </span>
+                                </div><!-- /autor -->
+                                <div class="col-xs-6 col-sm-12 col-md-6 text-right user victory">
+                                    Victoria de
+                                    <span>
+                                        <img class="user-img" alt="Fotografía del usuario que apadrina" src="images/user.jpg">
+                                    </span>
+                                </div><!-- /patrocinadores -->
+                            </div>
+                            <footer class="row">
+                                <ul class="col-xs-2 col-sm-2 col-md-4 info-kak">
+                                    <li>
+                                        <span class="fa icon2-region fa-lg"></span>
+                                        <span class="sr-only">Ámbito regional</span>
+                                    </li>
+                                </ul>
+                                <ul class="col-xs-10 col-sm-10 col-md-8 actions-kak">
+                                    <li class="read-later">
+                                        <a class="enabled" href="#">
+                                            <span class="fa fa-bookmark fa-lg"></span>
+                                            <span class="sr-only">Leer después</span>
+                                        </a>
+                                    </li>
+                                    <li class="like-number">
+                                        <span class="counter">32</span>
+                                        <a href="#">
+                                            <span class="fa fa-rocket fa-lg"></span>
+                                            <span class="sr-only">Impulsar</span>
+                                        </a>
+                                    </li>
+                                    <li class="kakareo-number">
+                                        <span class="counter">542</span>
+                                        <a href="#">
+                                            <span class="fa icon-megaphone fa-lg"></span>
+                                            <span class="sr-only">Kakarear</span>
+                                        </a>
+                                    </li>
+                                    <li class="more-actions">
+                                        <span class="more-actions">
+                                            ... <span class="sr-only">Más acciones</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </footer>
+                        </article>
+                    </section>
+
+                </aside>
+                <!-- ********************************************************************************************************* -->
+
+            </div><!-- /.row-->
+
+        </div><!-- /.conatiner-fluid -->
+    </div><!-- /.row.main -->
+
+    <footer id="footer" class="row" role="contentinfo">
+        <div class="container-fluid">
+            <section class="links">
+                <ul>
+                    <li><a href="#">Sobre kuorum.org</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Guía del usuario</a></li>
+                    <li><a href="#">Cargos públicos</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Desarrolladores</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Descripción de los servicios</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                </ul>
+            </section>
+        </div><!-- /.container-fluid - da ancho máximo y centra -->
+
+        <section class="more">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <ul class="social">
+                            <li class="hidden-xs">Síguenos: </li>
+                            <li><a href="#"><span class="sr-only">Twitter</span><span class="fa-stack fa-lg"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-twitter fa-stack-1x"></span></span></a></li>
+                            <li><a href="#"><span class="sr-only">Facebook</span><span class="fa-stack fa-lg"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-facebook fa-stack-1x"></span></span></a></li>
+                            <li><a href="#"><span class="sr-only">LinkedIn</span><span class="fa-stack fa-lg"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-linkedin fa-stack-1x"></span></span></a></li>
+                            <li><a href="#"><span class="sr-only">Google+</span><span class="fa-stack fa-lg"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-google-plus fa-stack-1x"></span></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <ul class="licenses clearfix">
+                            <li><span class="sr-only">Licencias</span></li>
+                            <li>
+                                <a href="#" hreflang="en" target="_blank">
+                                    <span class="sr-only">Github</span>
+                                    <span class="fa fa-github fa-3x"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="agpl" hreflang="en" href="#" target="_blank">AGPL (Affero General Public License)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid - da ancho máximo y centra -->
+        </section>
+    </footer>
+
+</div><!--fin container -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-progressbar.min.js"></script>
+<script src="js/jquery-te-1.4.0.min.js"></script>
+<script src="js/jquery.timeago.js"></script>
+<script src="js/jquery.timeago.es.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/hideShowPassword.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-datepicker.es.js"></script>
+<script src="js/icheck.min.js"></script>
+<script src="js/local.js"></script>
+
+<!-- el siguiente cargar al integrar -->
+<!-- <script src="js/custom.js"></script> -->
+
+</body>
+</html>
