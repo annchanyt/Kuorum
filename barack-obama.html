@@ -18,9 +18,6 @@
   <link rel="stylesheet" href="fonts/icomoon2/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/custom.css">
-
-  <link rel="stylesheet" href="css/custom-override.css">
-
   <!-- Estilos sólo para IE -->
   <!--[if IE]><link rel="stylesheet" href="css/style_ie.css" type="text/css" media="screen"><![endif]-->
   <!--[if IE 9]><link rel="stylesheet" href="css/style_ie9.css" type="text/css" media="screen"><![endif]-->
@@ -266,11 +263,11 @@
     <div class="row main">
       <div class="container-fluid">
         <div class="row">
-          <section id="main" class="col-sm-12 col-md-8" role="main">
+          <section id="main" class="politician-card col-sm-12 col-md-8" role="main">
             <div class="panel panel-default">
-              <div class='card-header'>
+              <div class='profile-header'>
                 <img src="images/barack-obama-header.jpg" alt="barack-obama">
-                <button type="button" class="follow btn btn-blue allow enabled noLogged cssExtra" data-ajaxfollowurl="/ajax/kuorumUser/follow?id=538f37cd69be8b0266f743c3" data-ajaxunfollowurl="/ajax/kuorumUser/unFollow?id=538f37cd69be8b0266f743c3" data-message-follow_hover="Follow <span class=&quot;fa fa-check-circle&quot;></span>" data-message-follow="Follow" data-message-unfollow_hover="Unfollow" data-message-unfollow="Following  <span class=&quot;fa fa-check-circle&quot;></span>" data-userid="538f37cd69be8b0266f743c3">Follow <i class="fa fa-plus"></i></button>
+                <button type="button" class="btn btn-lg btn-blue follow allow enabled noLogged cssExtra" data-ajaxfollowurl="/ajax/kuorumUser/follow?id=538f37cd69be8b0266f743c3" data-ajaxunfollowurl="/ajax/kuorumUser/unFollow?id=538f37cd69be8b0266f743c3" data-message-follow_hover="Follow <span class=&quot;fa fa-check-circle&quot;></span>" data-message-follow="Follow" data-message-unfollow_hover="Unfollow" data-message-unfollow="Following  <span class=&quot;fa fa-check-circle&quot;></span>" data-userid="538f37cd69be8b0266f743c3">Follow <i class="fa fa-plus"></i></button>
               </div>
               <div class="panel-body">
                 <div class="row">
@@ -355,7 +352,7 @@
                   </tbody>
                   <tfoot>
                       <tr>
-                          <td colspan="4" class="text-center"><a href="#" class="btn-primary btn-sm" role="button">See More</a></td>
+                          <td colspan="4" class="text-center"><a href="#" class="btn btn-sm btn-blue" role="button">See More</a></td>
                       </tr>
                   </tfoot>
                 </table>
@@ -381,13 +378,13 @@
                 <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
 
-            <section class="panel panel-default">
+            <section class="contact-politician panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Contact</h3>
               </div>
               <div class="panel-body text-center">
                 <h3>Have something to tell Barack Obama?</h3>
-                <a href="#" class=" btn-primary btn-lg" role="button">Contact Now</a>
+                <a href="#" class="btn btn-xl btn-blue btn-contact" role="button">Contact Now</a>
               </div>
             </section>
 
@@ -551,7 +548,7 @@
         <!-- Political Experience Timeline -->
         <div class="row">
           <div class="hidden-xs col-sm-12">
-            <div class="panel panel-default" id='political-experience'>
+            <div class="panel panel-default" id='political-experience-timeline'>
               <div class="panel-heading">
                 <h3 class="panel-title">Political Experience</h3>
               </div>
@@ -568,7 +565,7 @@
                         <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">1997</div>
+                    <div class="date text-brand-dark">1997</div>
                   </li>
                   <li class="timeline-inverted">
                     <div class="timeline-badge warning small"></div>
@@ -581,7 +578,7 @@
                         <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">2008</div>
+                    <div class="date text-brand-dark">2008</div>
                   </li>
                   <li>
                     <div class="timeline-badge warning"></div>
@@ -593,7 +590,7 @@
                         <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">2009</div>
+                    <div class="date text-brand-dark">2009</div>
                   </li>
                   <li class="timeline-inverted">
                       <div class="timeline-badge warning small"></div>
@@ -605,7 +602,7 @@
                         <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">2012</div>
+                    <div class="date text-brand-dark">2012</div>
                   </li>
                   <li>
                     <div class="timeline-badge warning small"></div>
@@ -630,7 +627,7 @@
                         </div> -->
                       </div>
                     </div>
-                    <div class="date text-warning">2013</div>
+                    <div class="date text-brand-dark">2013</div>
                   </li>
                   <li>
                   <div class="timeline-badge warning small"></div>
@@ -642,7 +639,7 @@
                         <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">2014</div>
+                    <div class="date text-brand-dark">2014</div>
                   </li>
                   <li class="timeline-inverted">
                     <div class="timeline-badge warning"></div>
@@ -654,7 +651,7 @@
                         <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
                       </div>
                     </div>
-                    <div class="date text-warning">2015</div>
+                    <div class="date text-brand-dark">2015</div>
                   </li>
                 </ul><!--/.timeline-->
               </div><!--/.panel-body.text-center -->
@@ -664,7 +661,7 @@
       </div><!-- /.conatiner-fluid -->
     </div><!-- /.row.main -->
     <!--Other projects ***********************************************************************  -->
-    <section id="otros-proyectos" class="row main">
+    <section id="otros-proyectos" class="row main normal-bg">
       <div class="container-fluid">
         <h2 class="underline">Latest Projects</h2>
         <ul class="kakareo-list project" aria-relevant="additions" aria-live="assertive" role="log">
@@ -1001,11 +998,11 @@
                 <img src="images/barack-obama-header.jpg" alt="texto-alternativo-imagen">
               </div>            
               <div class="user">
-                <div class='profile-pic-sm'>
+                <div class='profile-pic-div'>
                   <img itemprop="image" class="user-img big" alt="nombre" src="images/obama-dp.png">
                   <i class="fa fa-check"></i>
                 </div>
-                <button type="button" class="btn btn-blue btn-lg follow allow disabled">Siguiendo</button>
+                <button type="button" class="btn btn-lg btn-blue follow allow disabled">Siguiendo</button>
                 <a href="#" class="user-name" itemprop="name">Vladimir Putin</a>
                 <cite>President, United States</cite>
                 <p class='party'>Democratic</p>
@@ -1022,11 +1019,11 @@
                 <img src="images/united-russia.jpg" alt="texto-alternativo-imagen">
               </div>            
               <div class="user">
-                <div class='profile-pic-sm'>
+                <div class='profile-pic-div'>
                   <img itemprop="image" class="user-img big" alt="nombre" src="images/obama-dp.png">
                   <i class="fa fa-check"></i>
                 </div>
-                <button type="button" class="btn btn-blue btn-lg follow">Follow</button>
+                <button type="button" class="btn btn-lg  btn-blue follow">Follow<i class="fa fa-plus"></i></button>
                 <a href="#" class="user-name" itemprop="name">Vladimir Putin</a>
                 <cite>President, United States</cite>
                 <p class='party'>Democratic</p>
@@ -1043,11 +1040,11 @@
                 <img src="images/united-russia.jpg" alt="texto-alternativo-imagen">
               </div>            
               <div class="user">
-                <div class='profile-pic-sm'>
+                <div class='profile-pic-div'>
                   <img itemprop="image" class="user-img big" alt="nombre" src="images/obama-dp.png">
                   <i class="fa fa-check"></i>
                 </div>
-                <button type="button" class="btn btn-blue btn-lg follow">Follow</button>
+                <button type="button" class="btn btn-blue btn-lg follow">Follow<i class="fa fa-plus"></i></button>
                 <a href="#" class="user-name" itemprop="name">Vladimir Putin</a>
                 <cite>President, United States</cite>
                 <p class='party'>Democratic</p>
@@ -1060,7 +1057,7 @@
           </li>
         </ul>
         <div class="text-center">
-          <a href="#" class="btn-primary btn-sm">see more</a>
+          <a href="#" class="btn btn-sm btn-blue">See More</a>
         </div>
       </div>
     </section>
