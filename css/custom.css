@@ -72,6 +72,7 @@ select {padding: 6px 6px 6px 8px !important;}*/
     color:#ff0000;
 }
 
+
 img {width: 100%;}
 small, .small {font-size: 75%;}
 .main { padding: 0;}
@@ -4384,6 +4385,10 @@ p.party{
 }
 
 /* Political Table ===========*/
+.panel-default .table.table-condensed{
+  table-layout: fixed;
+  width: 100%;
+}
 .panel-default .table-condensed th, .panel-default .table-condensed td{
     border:none;
     text-align: left;
@@ -4395,11 +4400,25 @@ p.party{
 }
 .panel-default .table-condensed td{
     font-size: 14px;
+    width: 65%;
+}
+/* text truncation */
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a.ellipsis{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .panel-default .table-condensed thead th {
-    text-transform: uppercase;
-    color: #999;
-    font-weight: 500;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
 }
 .panel-default .table-condensed .text-right {
     text-align: right;
@@ -4407,18 +4426,6 @@ p.party{
 .panel-body > table + hr {
     margin-left: -15px;
     width: 110%;
-}
-.panel-share-buttons {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-.panel-share-buttons > li {
-    display: inline-block;
-    margin-right: 20px;
-}
-.panel-share-buttons > li > a:hover{
-    color:#b77a17;
 }
 .panel-table{
   margin: 0;
@@ -4440,6 +4447,18 @@ p.party{
 .panel-table tfoot .text-center {
     padding-bottom: 0;
     padding-top: 15px;
+}
+.panel-share-buttons {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.panel-share-buttons > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.panel-share-buttons > li > a:hover{
+    color:#b77a17;
 }
 /* Latest Political Activity Card =========== */
 .panel-table .political-activity-title{
