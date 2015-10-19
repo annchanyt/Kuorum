@@ -71,8 +71,18 @@ select {padding: 6px 6px 6px 8px !important;}*/
 .text-danger{
     color:#ff0000;
 }
-
-
+/* text truncation */
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a.ellipsis{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 img {width: 100%;}
 small, .small {font-size: 75%;}
 .main { padding: 0;}
@@ -4402,18 +4412,7 @@ p.party{
     font-size: 14px;
     width: 65%;
 }
-/* text truncation */
-.ellipsis{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-a.ellipsis{
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 .panel-default .table-condensed thead th {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
