@@ -321,7 +321,7 @@ a:focus {color: #e3981e;}
   padding: 6px 12px !important;
   border-radius: 3px;
   border: none;
-  margin: 0 !important;
+  margin: 0;
 }
 .btn:hover,
 .btn:active,
@@ -3599,7 +3599,7 @@ fieldset.multimedia ul.nav.nav-pills.nav-justified li:last-child a {margin-right
   }
   .btn {
     padding: 6px 8px !important;
-    margin: 0 !important;
+    margin: 0;
     color: #fff !important;
     border-radius: 3px !important;
     text-decoration: none !important;
@@ -4252,7 +4252,7 @@ p.party{
         min-height: 150px;
     }
     .profile-title{
-        float: left;
+        text-align: center;
         margin-left: 0px;
     }
     .profile-pic-col{
@@ -4284,16 +4284,20 @@ p.party{
       margin-bottom: 0px;
     }
     p.party{
-        font-size: 12px;
+      text-align: center;
+      font-size: 12px;
     }
     .follow-btn-group{
       text-align: center;
     }
     .btn.follow.inverted{
-      margin-right: 10px;.
+      margin-right: 12px;
+      margin-bottom: 6px;
+      width: 84px;
     }
     .following{
     font-size: 12px;
+    text-align: center;
     }
 }
 .extra-padding{
