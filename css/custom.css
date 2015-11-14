@@ -245,9 +245,9 @@ a:focus {color: #e3981e;}
 .navbar > .container-fluid {padding-right: 30px; padding-left: 30px;}
 .main > .container-fluid > .row {position: relative;}
 #main {padding-bottom: 40px; padding-top: 24px; min-height: 382px;}
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
   #main{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
   }
 }
 #main.home {margin: 0 0 40px 0; padding: 0;}
@@ -1264,7 +1264,7 @@ video#bgvid {
 
 /* boxes columna derecha dashboard */
 #aside-ppal {padding-top: 24px;}
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
   #aside-ppal {padding-top: 0;}
 }
 #aside-ppal > h1 {font-size: 23px; font-size: 2.3rem;}
@@ -4254,6 +4254,9 @@ p.party{
     /*margin-top: 10px;*/
     margin-right: 6px;
     font-size: 16px;
+}
+.following .fa-check-circle-o:before{
+  content: " | \f05d";
 }
 @media only screen and (max-width: 480px){
     .profile-header img{
