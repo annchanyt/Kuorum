@@ -352,7 +352,7 @@ a:focus {color: #e3981e;}
     font-size: 16px !important;
     font-size: 1.6rem !important;
     line-height: 1.1 !important;
-    margin: 0 !important;
+    margin: 0;
     padding: 14px !important;
 }
 /* Extra large button */
@@ -899,7 +899,7 @@ section.links li a {font-size: 11px; font-size: 1.1rem; color: #a8a8a8; padding:
 .popover .follow {margin: 0 0 0 49px !important;}
 .popover-box .follow {margin: 1px 0 0 90px !important;}
 .btn.follow {
-  width: 105px;
+  width: 120px;
   padding: 8px 8px !important;
 }
 .btn.follow span {margin: -2px 0 0 0px; display: inline-block;}
@@ -907,6 +907,18 @@ section.links li a {font-size: 11px; font-size: 1.1rem; color: #a8a8a8; padding:
 .btn.follow.disabled:hover,
 .btn.follow.disabled:active,
 .btn.follow.disabled:focus {background-color: #797979 !important; opacity: 1 !important;}
+.btn.follow.inverted {
+  background-color: #fff !important;
+  border: 1px solid #20a2ea ;
+  color: #20a2ea !important;
+  margin-bottom: 14px;
+}
+.btn.follow.inverted:hover,
+.btn.follow.inverted:active,
+.btn.follow.inverted:focus {
+  background-color: #20a2ea !important; 
+  color: #fff !important;
+}
 .popover .infoActivity {border-top: solid 1px #dadada; margin: 6px 0 0; padding: 6px 0 0;}
 .popover .infoActivity li {list-style: none; float: left; margin-right: 6px; font-size: 14px; font-size: 1.4rem; color: #797979;}
 .popover .infoActivity .fa-check {color: #bfd9f5;}
@@ -4178,28 +4190,28 @@ fieldset.multimedia ul.nav.nav-pills.nav-justified li:last-child a {margin-right
     position: relative;
 }
 .profile-header img{
-    min-height: 285px;
+    min-height: 200px;
 }
-.profile-header .btn.follow{
+/*.profile-header .btn.follow{
     position: absolute;
     bottom: 16px;
     right: 20px;
-}
+}*/
 .btn.follow .fa-plus{
     font-size: 14px;
     margin-left: 8px;
 }
 .profile-pic {
     position: relative;
-    float: left;
+   /* float: left;*/
 }
 .profile-pic .img-circle {
     width: 144px;
     height: 144px;
     border: solid 5px #fff;
-    margin-top: -65%;
+    margin-top: -14%;
 }
-.profile-pic .fa-check {
+/*.profile-pic .fa-check {
     position: absolute;
     bottom: 0px;
     right: 7px;
@@ -4212,29 +4224,32 @@ fieldset.multimedia ul.nav.nav-pills.nav-justified li:last-child a {margin-right
     font-size: 16px;
     padding-top: 9px;
     text-align: center;
-}
-.profile-title{
+}*/
+/*.profile-title{
     margin-left: -25px;
+}*/
+p.party{
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .profile-title h2{
     margin-top: 0;
     margin-bottom: 6px;
 }
+.follow-btn-group{
+  text-align: right;
+}
 .following{
-    text-align: right;
+  margin-bottom: 20px;
 }
 .following .fa-check-circle-o{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-right: 6px;
     font-size: 16px;
 }
-p.party{
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 @media only screen and (max-width: 767px){
     .profile-header img{
-        min-height: 200px;
+        min-height: 150px;
     }
     .profile-title{
         float: left;
@@ -4245,39 +4260,44 @@ p.party{
         margin-bottom: 10px;
     }
     .profile-pic{
-        width: 96px;
-        float: none;
+      /*  width: 96px;*/
     }
     .profile-pic .img-circle{
         width: 96px;
         height: 96px;
         border: solid 3px #fff; 
+        margin-top: -18%;
     }
-    .profile-pic .fa-check{
+    /*.profile-pic .fa-check{
         font-size: 10px;
         width: 24px;
         height: 24px;
         padding-top: 4px;
         border: #fff solid 2px;
-    }
+    }*/
     .profile-title h2{
         font-size: 24px;
         margin-bottom: 3px;
     }
-    .following{
-    text-align: right;
-    font-size: 12px;
-    }
     cite{
-        font-size: 14px;
-        margin-bottom: 0px;
+      font-size: 14px;
+      margin-bottom: 0px;
     }
     p.party{
         font-size: 12px;
     }
+    .follow-btn-group{
+      text-align: center;
+    }
+    .btn.follow.inverted{
+      margin-right: 10px;.
+    }
+    .following{
+    font-size: 12px;
+    }
 }
 .extra-padding{
-    padding: 0 45px;
+    padding: 0 30px;
 }
 .causes-tags{
     padding: 0;
