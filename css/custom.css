@@ -4247,7 +4247,7 @@ p.party{
     margin-right: 6px;
     font-size: 16px;
 }
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 480px){
     .profile-header img{
         min-height: 120px;
     }
@@ -4263,8 +4263,8 @@ p.party{
       /*  width: 96px;*/
     }
     .profile-pic .img-circle{
-        width: 96px;
-        height: 96px;
+        width: 84px;
+        height: 84px;
         border: solid 3px #fff; 
         margin-top: -24%;
     }
