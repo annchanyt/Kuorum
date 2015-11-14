@@ -4295,6 +4295,9 @@ p.party{
       text-align: center;
       font-size: 12px;
     }
+    .box-ppal p.party{
+      text-align: left;
+    }
     .follow-btn-group{
       text-align: center;
     }
