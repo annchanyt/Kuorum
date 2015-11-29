@@ -191,74 +191,6 @@
         </div>
       </nav>
     </header>
-
-    <!--Sub-Header ***********************************************************************  -->
-  
-<!--    <section id="info-sup-scroll">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                    <div itemtype="http://schema.org/Person" itemscope class="user">
-                        <span data-toggle="popover" role="button" rel="popover" class="popover-trigger">
-                            <img itemprop="image" class="user-img" alt="Diecisiete caract" src="images/obama-dp.png"><span itemprop="name">Barack Obama</span>
-                        </span>
-                        <!-- POPOVER INFO USUARIO ->
-                        <div class="popover">
-                            <button data-dismiss="popover" aria-hidden="true" class="close" type="button"><span class="fa fa-times-circle-o fa"></span><span class="sr-only">cerrar</span></button>
-                            <div class="popover-user">
-                                <div itemtype="http://schema.org/Person" itemscope="" class="user">
-                                    <a itemprop="url" href="#">
-                                        <img itemprop="image" class="user-img" alt="Diecisiete caract" src="images/user.jpg"><span itemprop="name">Diecisiete caract</span>
-                                    </a>
-                                    <span class="user-type">
-                                        <small>No político</small>
-                                    </span>
-                                </div>
-                                <button class="btn btn-blue btn-xs follow allow disabled" type="button">Follow</button>
-                                <div class="pull-right">
-                                    <span class="fa fa-check-circle-o"></span>
-                                    <small>Te sigue</small>
-                                </div>
-                                <ul class="infoActivity clearfix">
-                                    <li>
-                                        <span class="fa fa-lightbulb-o"></span>
-                                        <span class="counter">0</span>
-                                        <span class="sr-only">propuestas</span>
-                                    </li>
-                                    <li>
-                                        <span class="fa fa-user"></span>
-                                        <small><span class="fa fa-forward"></span></small>
-                                        <span class="counter">4</span>
-                                        <span class="sr-only">siguiendo</span>
-                                    </li>
-                                    <li>
-                                        <span class="fa fa-user"></span>
-                                        <small><span class="fa fa-backward"></span></small>
-                                        <span class="counter">7</span>
-                                        <span class="sr-only">seguidores</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- FIN POPOVER INFO USUARIO->
-                        <span class="user-type">
-                            <small>President, United States</small>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <ul class="activity">
-                        <li><span class="counter">4</span> <span class="icon-Flaticon_17919"></span> victorias</li>
-                        <li><span class="counter">2</span> <span class="icon-Flaticon_20188"></span> impulsos</li>
-                        <li><span class="counter">6</span> <span class="icon-Flaticon_24178"></span> votes</li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                    <button type="button" class="btn btn-blue pull-right follow allow">Follow</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <!--Main Content ***********************************************************************  -->
     <div class="row main">
       <div class="container-fluid">
@@ -1117,6 +1049,94 @@
       </section><!--/.more -->
     </footer>
   </div><!--/.container-fluid-->
+
+  <!-- Modal registro/login -->
+  <div class="modal fade in" id="causes-modal" tabindex="-1" role="dialog" aria-labelledby="registroLoginUsuario" aria-hidden="false" style="display: block;">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true" class="fa fa-times-circle-o fa"></span><span class="sr-only">Cerrar</span></button>
+          <h4 class="sr-only" id="registroLoginUsuario">Registro / Login usuario</h4>
+        </div>
+        <div class="modal-body text-center">
+          <h1>Let Spain hear your voice!</h1>
+          <h3>Pick the top 3 causes you support:</h3>
+          <div class='row causes-icon'>
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#Economía</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div>  
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#Innovación</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div> 
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#Transparencia</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div>     
+          </div>
+          <div class="row causes-icon">
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#EstadodelBienestar</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div>  
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#Cooperación</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div>  
+            <div class="col-xs-6 col-sm-4 text-center">
+              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
+              <h4>#Igualdad</h4>
+              <p>Some text to explain what this cause is about...</p>
+            </div>            
+          </div>
+          <!-- email subscription form -->
+          <form action="https://kuorum.org/j_spring_security_check" method="post" name="login-header" id="login-modal" role="form" class="login">
+            <h3>Leave us your email if you want to see the secret PSOE video!</h3>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control input-lg center-block" id="email" required="" placeholder="Introduce your email" value="" aria-required="true">   
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-lg" value="Submit my choice!">
+            </div>
+            <div class="form-group">
+              You are accepting the <a href="https://kuorum.org/kuorum/politica-privacidad" target="_blank">service conditions</a>
+            </div>
+          </form>
+          <script type="text/javascript">
+            $(function (){
+              $("#sign-modal").validate({
+                      errorClass:'error',
+                      errorPlacement: function(error, element) {
+                          if(element.attr('id') == 'deadline')
+                              error.appendTo(element.parent("div").parent("div"));
+                          else if(element.attr('id') == 'JUSTICE')
+                              error.appendTo(element.parent("div").parent("div").parent("div").parent("div"));
+                          else
+                              error.insertAfter(element);
+                      },
+                      errorElement:'span',
+               rules: {'name':{required: true ,maxlength: 17},'email':{required: true ,email: true}} ,  messages: {'name':{required: 'We need a name to address you',maxlength: 'The username must have a maximum of 17 characters'},'email':{required: 'We need an email to communicate with you',email: 'Wrong email format'}}
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" id="">(function(){var a=window._fbq||(window._fbq=[]);if(!a.loaded){var b=document.createElement("script");b.async=!0;b.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);a.loaded=!0}a.push(["addPixelId","745424162168055"])})();window._fbq=window._fbq||[];window._fbq.push(["track","PixelInitialized",{}]);</script>
+  <noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=745424162168055&amp;amp;ev=NoScript"&gt;</noscript>
+  <script type="text/javascript" id="" src="./Hillary-Clinton_files/oct.js"></script>
+  <script type="text/javascript" id="">(function(){var b=window._fbq||(window._fbq=[]);if(!b.loaded){var a=document.createElement("script");a.async=!0;a.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c);b.loaded=!0}})();window._fbq=window._fbq||[];window._fbq.push(["track","6015302208736",{value:"0.00",currency:"EUR"}]);</script>
+  <noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6015302208736&amp;amp;cd[value]=0.00&amp;amp;cd[currency]=EUR&amp;amp;noscript=1"&gt;</noscript>
+  <!-- fin modal -->
+
+
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-progressbar.min.js"></script>
