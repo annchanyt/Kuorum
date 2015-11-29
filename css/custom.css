@@ -4779,6 +4779,9 @@ p.party{
 #causes-modal .modal-body .causes-icon img:hover{
     opacity: 0.5;
 }
+#causes-modal .form-group{
+  margin-bottom: 14px;
+}
 
 @media screen and (min-width: 768px){
   #causes-modal .modal-body h4{
