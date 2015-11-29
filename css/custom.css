@@ -4773,15 +4773,16 @@ p.party{
     font-family: 'Helvetica Neue';
     font-variant: normal;
 }
-.causes-icon{
+/*.causes-icon{
   margin-bottom: 8px;
-}
+}*/
 #causes-modal .modal-body .causes-icon button{
   height: 40px;
   width: 154px;
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #acacac;
+  margin-bottom: 8px;
 }
 #causes-modal .modal-body .causes-icon button:hover{
   background-color: #cdcdcd;
