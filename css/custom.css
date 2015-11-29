@@ -45,7 +45,7 @@ cite{
 input[type="text"],
 input[type="number"],
 input[type="email"],
-select {color: #545454; font-size: 12px; font-size:  1.2rem; border: 1px solid #efefef; box-shadow: 0 0 0 rgba(0, 0, 0, 0);}
+select {color: #545454; font-size: 12px; font-size:  1.2rem; border: 1px solid #a3a3a3; box-shadow: 0 0 0 rgba(0, 0, 0, 0);}
 /*input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -59,7 +59,7 @@ select {padding: 6px 6px 6px 8px !important;}*/
 
 .add-on.input-group-addon label {margin-bottom: 0; color: #a8a8a8;}
 .add-on.input-group-addon label input {margin-right: 2px;}
-.input-group-addon {border: 1px solid #efefef; background-color: #efefef; outline: 0;}
+.input-group-addon {border: 1px solid #a3a3a3; background-color: #efefef; outline: 0;}
 
 /* different colour text */
 .text-brand-dark{
