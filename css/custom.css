@@ -4749,7 +4749,9 @@ p.party{
 
 
 /*pop-up modal =========== */
-
+#causes-modal .modal-dialog{
+  margin-top: 10px;
+}
 #causes-modal .modal-header{
   border-bottom: none;
 }
@@ -4758,42 +4760,73 @@ p.party{
 }
 #causes-modal .modal-body h1{
   margin-top: 0;
-  font-size: 28px;
+  font-size: 18px;
 }
 #causes-modal .modal-body h3{
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 #causes-modal .modal-body h4{
     font-size: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     font-family: 'Helvetica Neue';
     font-variant: normal;
-  }
+}
+.causes-icon{
+  margin-bottom: 8px;
+}
+#causes-modal .modal-body .causes-icon button{
+  height: 40px;
+  width: 154px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #acacac;
+}
+#causes-modal .modal-body .causes-icon button:hover{
+  background-color: #cdcdcd;
+}
 #causes-modal .modal-body .causes-icon img{
   height: 64px;
   width: 64px;
-  margin-bottom: 10px;
-}
-#causes-modal .modal-body .causes-icon img:hover{
-    opacity: 0.5;
-}
-#causes-modal .form-group{
-  margin-bottom: 14px;
+  margin-bottom: 3px;
 }
 
+#causes-modal .form-group{
+  margin-bottom: 12px;
+}
+.input-lg{
+    height: 36px;
+  }  
 @media screen and (min-width: 768px){
-  #causes-modal .modal-body h4{
+  #causes-modal .modal-body h1{
+    font-size: 24px;
+  }
+  #causes-modal .modal-body h3{
     font-size: 16px;
+     margin-bottom: 20px;
+  }
+  #causes-modal .modal-body h4{
+    font-size: 14px;
+  }
+  .causes-icon{
+  margin-bottom: 18px;
+  } 
+  #causes-modal .modal-body .causes-icon button{
+    height: 138px;
+    width: 138px;
+    margin-right: 12px;
   }
   #causes-modal .modal-body .causes-icon img{
     height: 84px;
     width: 84px;
   }
-  #causes-modal .form-control{
-    
-  }
+  #causes-modal .form-group{
+  margin-bottom: 14px;
+    }
+  .input-lg{
+    height: 36px;
+  }  
 }
 
 
