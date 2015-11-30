@@ -57,62 +57,43 @@
   <link rel="shortcut icon" href="images/icons/favicon.ico">
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
-    <!-- Large modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#causes-modal">Large modal</button>
-
-    <!-- Modal registro/login -->
-  <div class="modal fade in" id="causes-modal" tabindex="-1" role="dialog" aria-labelledby="registroLoginUsuario" aria-hidden="false" style="display: block;">
+  <!-- Modal registro/login -->
+  <div class="modal fade in" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="registroLoginUsuario" aria-hidden="false" style="display: block;">
     <div class="modal-dialog ">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true" class="fa fa-times-circle-o fa"></span><span class="sr-only">Cerrar</span></button>
           <h4 class="sr-only" id="registroLoginUsuario">Registro / Login usuario</h4>
+          <h5>Message to Barack Obama</h5>
         </div>
-        <div class="modal-body text-center">
-          <h1>Let Spain hear your voice!</h1>
-          <h3>Pick the top 3 causes you support:</h3>
-          <div class='row causes-icon'>
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#Economía</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div>  
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#Innovación</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div> 
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#Transparencia</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div>     
-          </div>
-          <div class="row causes-icon">
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#EstadodelBienestar</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div>  
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#Cooperación</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div>  
-            <div class="col-xs-6 col-sm-4 text-center">
-              <a href=""><img class='img-circle' src="images/transparencia.svg" alt=""></a>
-              <h4>#Igualdad</h4>
-              <p>Some text to explain what this cause is about...</p>
-            </div>            
-          </div>
-          <!-- email subscription form -->
+        <div class="modal-body">
+         <!-- email subscription form -->
           <form action="https://kuorum.org/j_spring_security_check" method="post" name="login-header" id="login-modal" role="form" class="login">
-            <h3>Leave us your email if you want to see the secret PSOE video!</h3>
             <div class="form-group">
-              <input type="email" name="email" class="form-control input-lg center-block" id="email" required="" placeholder="Introduce your email" value="" aria-required="true">   
+              <label for="message-text" class="control-label">Which cause is this message related to?</label>
+              <select class="form-control">
+                <option>#Economía</option>
+                <option>#Innovación</option>
+                <option>#Transparencia</option>
+                <option>#EstadodelBienestar</option>
+                <option>#Cooperación</option>
+                <option>#Igualdad</option>
+              </select>
             </div>
             <div class="form-group">
-              <input type="submit" class="btn btn-lg" value="Submit my choice!">
+              <label for="message-text" class="control-label">Message:</label>
+              <textarea class="form-control" id="message-text" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="control-label">Leave us your email to get updates on this message!</label>
+              <input type="text" name="name" class="form-control counted " id="name" required="" placeholder="Tell us your name" value="" aria-required="true">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control center-block" id="email" required="" placeholder="Introduce your email" value="" aria-required="true">   
+            </div>
+          
+            <div class="form-group">
+              <input type="submit" class="btn" value="Send Message!">
             </div>
             <div class="form-group">
               You are accepting the <a href="https://kuorum.org/kuorum/politica-privacidad" target="_blank">service conditions</a>
@@ -139,7 +120,6 @@
       </div>
     </div>
   </div>
-
 
   <script type="text/javascript" id="">(function(){var a=window._fbq||(window._fbq=[]);if(!a.loaded){var b=document.createElement("script");b.async=!0;b.src="//connect.facebook.net/en_US/fbds.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);a.loaded=!0}a.push(["addPixelId","745424162168055"])})();window._fbq=window._fbq||[];window._fbq.push(["track","PixelInitialized",{}]);</script>
   <noscript>&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=745424162168055&amp;amp;ev=NoScript"&gt;</noscript>

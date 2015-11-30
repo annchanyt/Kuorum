@@ -1525,7 +1525,7 @@ video#bgvid {
   text-transform: capitalize;
 }
 select.form-control,
-select.form-control option {cursor: pointer; color: #a8a8a8;}
+select.form-control option {cursor: pointer; color: #545454;}
 
 .title textarea {font-size: 22px; font-size: 2.2rem; color: #a8a8a8; height: 125px}
 .text textarea {font-size: 15px; font-size: 1.5rem; color: #a8a8a8;}
@@ -4748,7 +4748,7 @@ p.party{
 }
 
 
-/*pop-up modal =========== */
+/* PSOE modal =========== */
 #causes-modal .modal-dialog{
   margin-top: 10px;
 }
@@ -4773,9 +4773,6 @@ p.party{
     font-family: 'Helvetica Neue';
     font-variant: normal;
 }
-/*.causes-icon{
-  margin-bottom: 8px;
-}*/
 #causes-modal .modal-body .causes-icon button{
   height: 40px;
   width: 168px;
@@ -4830,10 +4827,21 @@ p.party{
   }  
 }
 
-
-
-
-
+/* contact modal =========== */
+#contact-modal .modal-body{
+  padding-bottom: 6px;
+}
+#contact-modal h5{
+  font-size: 18px;
+  margin: 0;
+}
+#contact-modal .form-group{
+  margin-bottom: 10px;
+}
+#contact-modal textarea{
+  resize: none;
+  height: 120px;
+}
 
 
 
