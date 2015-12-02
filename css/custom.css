@@ -348,9 +348,9 @@ a:focus {color: #e3981e;}
 .btn.btn-xs {
   border-radius: 3px !important;
   font-size: 12px !important;
-  line-height: 1.6 !important;
-  padding: 1px 15px 2px !important;
-  margin: 0 !important;
+  /*line-height: 1.6 !important;*/
+  padding: 2px 10px 2px !important;
+  margin: 0;
 }
 /* large button (botón grande) */
 .btn.btn-lg {
@@ -4244,6 +4244,10 @@ p.party{
     margin-top: 0;
     margin-bottom: 6px;
 }
+.follow i{
+  margin-right: 6px;
+  font-weight: 
+}
 .follow-btn-group{
   text-align: right;
 }
@@ -4278,6 +4282,7 @@ p.party{
         height: 84px;
         border: solid 3px #fff; 
         margin-top: -24%;
+        background-color: #fff;
     }
     /*.profile-pic .fa-check{
         font-size: 10px;
@@ -4433,6 +4438,9 @@ p.party{
 }
 
 /* Political Table ===========*/
+.table{
+  margin-bottom: 10px;
+}
 .panel-default .table.table-condensed{
   table-layout: fixed;
   width: 100%;
@@ -4440,6 +4448,12 @@ p.party{
 .panel-default .table-condensed th, .panel-default .table-condensed td{
     border:none;
     text-align: left;
+}
+.panel-default .table-condensed td.text-center{
+    text-align: center;
+}
+.panel-default .table-condensed td .btn-xs.btn-blue{
+    margin-top: 3px;
 }
 .panel-default .table-condensed th {
     width: 35%;
@@ -4462,6 +4476,10 @@ p.party{
 .panel-body > table + hr {
     margin-left: -15px;
     width: 110%;
+}
+hr{
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .panel-table{
   margin: 0;
@@ -4749,6 +4767,21 @@ p.party{
 
 
 /* PSOE modal =========== */
+header h6{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  background-color: #990000;
+  margin: -6px 0 6px 0;
+  color: white;
+  height: 36px;
+  line-height: 36px;
+}
+header .header-msg:hover{
+  text-decoration: none;
+}
+header .header-msg h6:hover{
+  background-color: #B20000;
+}
 #causes-modal .modal-dialog{
   margin-top: 10px;
 }
